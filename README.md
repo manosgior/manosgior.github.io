@@ -35,7 +35,7 @@ EuroSys '24
 Antonios Katsarakis*,**Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
 EuroSys '23
 
-\* *Equal contribution*
+\**Equal contribution*
 
 ## Honors & Awards
 
@@ -44,19 +44,20 @@ Undergraduate teaching assistant based on overall grades.
 
 ## Teaching
 
-* Cloud Software Engineering lab, TU Munich, April 2024 - Present
-* Cloud Software Engineering lab, TU Munich, October 2023 - March 2024
-* Quantum Software Systems seminar, TU Munich, April 2023 - August 2023
-* Distributed Systems lecture, TU Munich, October 2022 - March 2023
-* Cloud Systems Engineering lab, TU Munich, April 2022, August 2022
-* Distributed Systems lecture, TU Munich, October 2021 - March 2022
+### TU Munich
+* Cloud Software Engineering lab: October 2023 - March 2024, April 2024 - Present
+* Quantum Software Systems seminar: TU Munich, April 2023 - August 2023
+* Distributed Systems lecture: October 2021 - March 2022, October 2022 - March 2023
+* Cloud Systems Engineering lab, April 2022, August 2022
 
-* Languages and Compilers lecture, University of Crete, Feb 2021 - July 2021
-* Introduction to Computer Science lecture, University of Crete, Sept 2020 - Jan 2021
-* Principles of Distributed Computing lecture, University of Crete, Feb 2020 - July 2020
-* Data Structures lecture, University of Crete, Sept 2019 - Jan 2020
+### University of Crete
+* Languages and Compilers lecture, Feb 2021 - July 2021
+* Introduction to Computer Science lecture, Sept 2020 - Jan 2021
+* Principles of Distributed Computing lecture, Feb 2020 - July 2020
+* Data Structures lecture, Sept 2019 - Jan 2020
 
 ## Theses
 
 
 ## Hobbies & Interests
+
