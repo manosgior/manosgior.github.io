@@ -62,6 +62,37 @@ Undergraduate teaching assistant based on overall grades.
 
 ## Theses
 
+Real-time and parallel task scheduling for Quantum Computing\
+Marcin Praski\
+M.Sc. thesis
+
+[Hardware-aware Optimal Quantum Circuit Cutting and Knitting](https://github.com/TUM-DSE/research-work-archive/blob/main/archive/2023/winter/docs/msc_tran_hardware_aware_optimal_quantum_circuit_cutting_and_knitting.pdf)\
+Thang Tran\
+M.Sc. thesis
+
+ [Quantum Circuit Transpilation: Experimental Analysis and Subarchitecture Selection](https://github.com/TUM-DSE/research-work-archive/blob/main/archive/2023/winter/docs/msc_erdogan_quantum_circuit_transpilation_experimental_analysis_and_subarchitecture_selection.pdf)\
+Zeynep Erdogan\
+M.Sc. thesis
+
+[Scalable Quantum Cloud Scheduling: Optimizing Resource Allocation for Efficient NISQ Computing](https://github.com/TUM-DSE/research-work-archive/blob/main/archive/2023/winter/docs/msc_lugovoy_scalable_quantum_cloud_scheduling.pdf)\
+Dmitry Lugovoy\
+M.Sc. thesis}  
+    
+[Extensions to QStack: Virtual Qubit Routing and SuperMarQ Benchmarks](https://github.com/TUM-DSE/research-work-archive/blob/main/archive/2022/winter/docs/gr_darwish_extensions_to_qstack.pdf)\
+Ahmed Darwish\
+Guided research    
+
+ A System Stack for Distributed Quantum Computing\
+ Nathaniel Tornow\
+Guided research    
+
+[DQS: A Framework for Efficient Distributed Simulation of Large Quantum Circuits]({https://github.com/TUM-DSE/research-work-archive/blob/main/archive/2022/summer/docs/bsc_tornow_dqs_a_framework_for_efficient_distributed_simulation_of_large_quantum_circuits.pdf)\
+Nathaniel Tornow\
+B.Sc. thesis
+
+[Microservice Architecture in Practice: Debugging the Behaviour of Concurrent Applications at financial.com AG]({https://github.com/TUM-DSE/research-work-archive/blob/main/archive/2022/winter/docs/msc_tumboimbela_microservice_architecture_in_practice_external.pdf)\
+Jonathan Ryan Wijaya Tumboimbela\
+M.Sc. thesis
 
 ## Hobbies & Interests
 When I'm not immersed in the quantum realm, I'm diving deep into the world of cinema. As every [Letterboxd](https://letterboxd.com/manosgior/) user should do, I analyze films with the precision of a quantum algorithm, dissecting every frame, narrative twist, and camera angle—because why watch one film when you can watch ten on a weekend? My love for storytelling extends beyond the screen into photography, capturing landscapes, nature, and architecture. Outside, I swap my love for cinematic journeys for real ones, like hiking (I'm proud of my recent achievement of hiking the Andes, 2000-5000 meters in height). I also keep active by swimming, lifting weights in the gym, and running.
