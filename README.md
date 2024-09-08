@@ -44,4 +44,19 @@ Undergraduate teaching assistant based on overall grades.
 
 ## Teaching
 
+* Cloud Software Engineering lab, TU Munich, April 2024 - Present
+* Cloud Software Engineering lab, TU Munich, October 2023 - March 2024
+* Quantum Software Systems seminar, TU Munich, April 2023 - August 2023
+* Distributed Systems lecture, TU Munich, October 2022 - March 2023
+* Cloud Systems Engineering lab, TU Munich, April 2022, August 2022
+* Distributed Systems lecture, TU Munich, October 2021 - March 2022
+
+* Languages and Compilers lecture, University of Crete, Feb 2021 - July 2021
+* Introduction to Computer Science lecture, University of Crete, Sept 2020 - Jan 2021
+* Principles of Distributed Computing lecture, University of Crete, Feb 2020 - July 2020
+* Data Structures lecture, University of Crete, Sept 2019 - Jan 2020
+
 ## Theses
+
+
+## Hobbies & Interests
