@@ -28,13 +28,11 @@ Arxiv pre-print
 
 ## Posters & Talks
 [CAP Off: Local Reads and Linearizable Asynchronous Replication](http://2024.eurosys.org/posters/eurosys24posters-paper04.pdf)\
-Antonios Katsarakis*, 
-**Emmanouil Giortamis** *, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
+Antonios Katsarakis*,**Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
 EuroSys '24
 
 [Beyond reCAP: Local Reads and Linearizable Asynchronous Replication](https://2023.eurosys.org/docs/posters/eurosys23posters-final5.pdf)\
-Antonios Katsarakis*,
-**Emmanouil Giortamis** *, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
+Antonios Katsarakis*,**Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
 EuroSys '23
 
 \* *Equal contribution*
