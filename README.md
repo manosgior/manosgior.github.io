@@ -10,8 +10,8 @@ Please call me Manos. Emmanouil sounds awkwardly official.
 
 # Publications
 
-FlexLog: A Shared Log for Stateful Serverless Computing
-Dimitra Giantsidi, **Emmanouil Giortamis**, Nathaniel Tornow, Florin Dinu, and Pramod Bhatotia
+FlexLog: A Shared Log for Stateful Serverless Computing\
+Dimitra Giantsidi, **Emmanouil Giortamis**, Nathaniel Tornow, Florin Dinu, and Pramod Bhatotia\
 ACM HPDC '23
 
 # Posters & Talks
