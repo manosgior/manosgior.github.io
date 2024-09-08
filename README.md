@@ -8,6 +8,10 @@ Before joining TUM, I graduated from the [Computer Science Department](https://w
 
 Please call me Manos. Emmanouil sounds awkwardly official.
 
+#### Research Interests
+Quantum Computing, Hybrid Quantum-Classical Systems, Heterogeneous & Distributed Systems, High-Performance Computing (HPC)*
+
+
 ## Publications
 
 [FlexLog: A Shared Log for Stateful Serverless Computing](https://dl.acm.org/doi/abs/10.1145/3588195.3592993)\
@@ -28,11 +32,11 @@ Arxiv pre-print
 
 ## Posters & Talks
 [CAP Off: Local Reads and Linearizable Asynchronous Replication](http://2024.eurosys.org/posters/eurosys24posters-paper04.pdf)\
-Antonios Katsarakis*,**Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
+Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
 EuroSys '24
 
 [Beyond reCAP: Local Reads and Linearizable Asynchronous Replication](https://2023.eurosys.org/docs/posters/eurosys23posters-final5.pdf)\
-Antonios Katsarakis*,**Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
+Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
 EuroSys '23
 
 \**Equal contribution*
@@ -44,13 +48,13 @@ Undergraduate teaching assistant based on overall grades.
 
 ## Teaching
 
-### TU Munich
+#### TU Munich
 * Cloud Software Engineering lab: October 2023 - March 2024, April 2024 - Present
 * Quantum Software Systems seminar: TU Munich, April 2023 - August 2023
 * Distributed Systems lecture: October 2021 - March 2022, October 2022 - March 2023
 * Cloud Systems Engineering lab, April 2022, August 2022
 
-### University of Crete
+#### University of Crete
 * Languages and Compilers lecture, Feb 2021 - July 2021
 * Introduction to Computer Science lecture, Sept 2020 - Jan 2021
 * Principles of Distributed Computing lecture, Feb 2020 - July 2020
@@ -60,4 +64,4 @@ Undergraduate teaching assistant based on overall grades.
 
 
 ## Hobbies & Interests
-
+When I'm not immersed in the quantum realm, I'm diving deep into the world of cinema. As every [Letterboxd](https://letterboxd.com/manosgior/) user should do, I analyze films with the precision of a quantum algorithm, dissecting every frame, narrative twist, and camera angle—because why watch one film when you can watch ten on a weekend? My love for storytelling extends beyond the screen into photography, capturing landscapes, nature, and architecture. Outside, I swap my love for cinematic journeys for real ones, like hiking (I'm proud of my recent achievement of hiking the Andes, 2000-5000 meters in height). I also keep active by swimming, lifting weights in the gym, and running.
