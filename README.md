@@ -19,8 +19,7 @@ ACM HPDC '23
 Arxiv pre-print
 
 [Orchestrating the Quantum Clouds with Qonductor](https://arxiv.org/abs/2408.04312)\
-
-**Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, and Pramod Bhatotia\
+**Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, Dmitry Lugovoy, and Pramod Bhatotia\
 Arxiv pre-print
 
 [Scaling Quantum Computations via Gate Virtualization](https://arxiv.org/abs/2406.18410)\
@@ -38,7 +37,7 @@ Antonios Katsarakis*,
 **Emmanouil Giortamis** *, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
 EuroSys '23
 
-* *Equal contribution*
+\* *Equal contribution*
 
 # Honors & Awards
 
