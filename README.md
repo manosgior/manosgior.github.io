@@ -15,25 +15,30 @@ Dimitra Giantsidi, **Emmanouil Giortamis**, Nathaniel Tornow, Florin Dinu, and P
 ACM HPDC '23
 
 [QOS: A Quantum Operating System](https://arxiv.org/abs/2406.19120)\
-Emmanouil Giortamis, Francisco Romão, Nathaniel Tornow, and Pramod Bhatotia\
+**Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, and Pramod Bhatotia\
 Arxiv pre-print
 
 [Orchestrating the Quantum Clouds with Qonductor](https://arxiv.org/abs/2408.04312)\
-Emmanouil Giortamis, Francisco Romão, Nathaniel Tornow, and Pramod Bhatotia\
+
+**Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, and Pramod Bhatotia\
 Arxiv pre-print
 
 [Scaling Quantum Computations via Gate Virtualization](https://arxiv.org/abs/2406.18410)\
-Nathaniel Tornow, Emmanouil Giortamis, and Pramod Bhatotia\
+Nathaniel Tornow, **Emmanouil Giortamis**, and Pramod Bhatotia\
 Arxiv pre-print
 
 # Posters & Talks
 [CAP Off: Local Reads and Linearizable Asynchronous Replication](http://2024.eurosys.org/posters/eurosys24posters-paper04.pdf)\
-Antonios Katsarakis*, Emmanouil Giortamis*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
+Antonios Katsarakis*, 
+**Emmanouil Giortamis** *, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
 EuroSys '24
 
 [Beyond reCAP: Local Reads and Linearizable Asynchronous Replication](https://2023.eurosys.org/docs/posters/eurosys23posters-final5.pdf)\
-Antonios Katsarakis*, Emmanouil Giortamis*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
+Antonios Katsarakis*,
+**Emmanouil Giortamis** *, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
 EuroSys '23
+
+* *Equal contribution*
 
 # Honors & Awards
 
