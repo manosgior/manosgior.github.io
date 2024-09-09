@@ -1,15 +1,17 @@
 ## About me
 
-I’m a Ph.D. student at the [Chair of Computer Systems](https://dse.in.tum.de/), [Technical University of Munich (TUM)](https://www.tum.de/), supervised by [Prof. Pramod Bhatotia](https://dse.in.tum.de/bhatotia/). My research interests lie in the field of software systems for quantum computing with a particular focus on building software abstractions to scale Noisy Intermediate-Scale Quantum (NISQ) era computing, such as quantum resource management and distributed quantum computing.
+I’m a Ph.D. student at the [Chair of Computer Systems](https://dse.in.tum.de/), [Technical University of Munich (TUM)](https://www.tum.de/), supervised by [Prof. Pramod Bhatotia](https://dse.in.tum.de/bhatotia/). My research interests lie in the field of systems software for quantum computing, i.e., I bring systems abstractions and mechanisms into quantum computing for improved programmability, performance, and scalability. 
 
-More specifically, I design and build systems that increase the scalability of real-world quantum applications and the resource efficiency of the underlying NISQ resources, i.e., utilization and load balance. Previously I had been working in the distributed systems area, specifically in distributed shared logs and replication protocols.
+In particular, I focus on compiler and OS mechanisms that address the low fidelity, vast heterogeneity, and underutilization of quantum devices and the users' experience with respect to job queuing times. To achieve this, I design systems that leverage *circuit cutting and knitting*, spatiotemporal multiplexing (aka scheduling), and hybrid quantum-classical resource estimation and management.
+
+Previously, I worked in the distributed systems area, specifically in distributed shared logs, state machine replication (SMR), and replication protocols.
 
 Before joining TUM, I graduated from the [Computer Science Department](https://www.csd.uoc.gr/CSD/index.jsp?lang=en), [University of Crete](https://en.uoc.gr/), Greece, where I worked on highly parallel data structures and cloud scheduling. 
 
 Please call me Manos. Emmanouil sounds awkwardly official.
 
 #### Research Interests
-*Quantum Computing, Hybrid Quantum-Classical Systems, Heterogeneous & Distributed Systems, High-Performance Computing (HPC)*
+*Quantum Computing, Hybrid Quantum-Classical Systems, Heterogeneous & Distributed Systems, Resource Management*
 
 
 ## Publications
@@ -95,4 +97,4 @@ Jonathan Ryan Wijaya Tumboimbela\
 M.Sc. thesis
 
 ## Hobbies & Interests
-When I'm not immersed in the quantum realm, I'm diving deep into the world of cinema. As every [Letterboxd](https://letterboxd.com/manosgior/) user should do, I analyze films with the precision of a quantum algorithm, dissecting every frame, narrative twist, and camera angle—because why watch one film when you can watch ten on a weekend? My love for storytelling extends beyond the screen into photography, capturing landscapes, nature, and architecture. Outside, I swap my love for cinematic journeys for real ones, like hiking (I'm proud of my recent achievement of hiking the Andes, 2000-5000 meters in height). I also keep active by swimming, lifting weights in the gym, and running.
+When I'm not immersed in the quantum realm, I'm diving deep into the world of cinema. With more than 800 films watched, I am a self-proclaimed [Letterboxd](https://letterboxd.com/manosgior/) critic. My love for storytelling extends beyond the screen into photography, capturing landscapes, nature, and architecture. Outside, I swap my love for cinematic journeys for real ones, like hiking (I'm proud of my recent achievement of hiking the Andes, 2000-5000 meters in height). I also keep active by swimming, lifting weights in the gym, and running.
