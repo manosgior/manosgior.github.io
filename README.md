@@ -78,7 +78,7 @@ M.Sc. thesis
 
 [Scalable Quantum Cloud Scheduling: Optimizing Resource Allocation for Efficient NISQ Computing](https://github.com/TUM-DSE/research-work-archive/blob/main/archive/2023/winter/docs/msc_lugovoy_scalable_quantum_cloud_scheduling.pdf)\
 Dmitry Lugovoy\
-M.Sc. thesis}  
+M.Sc. thesis
     
 [Extensions to QStack: Virtual Qubit Routing and SuperMarQ Benchmarks](https://github.com/TUM-DSE/research-work-archive/blob/main/archive/2022/winter/docs/gr_darwish_extensions_to_qstack.pdf)\
 Ahmed Darwish\
