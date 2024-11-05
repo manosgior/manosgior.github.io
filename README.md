@@ -27,7 +27,7 @@ Arxiv pre-print
 
 [Weaver: A Retargetable Compiler Framework for FPQA Quantum Architectures](https://arxiv.org/abs/2409.07870)\
 Oğuzcan Kırmemiş, Francisco Romão, **Emmanouil Giortamis**, and Pramod Bhatotia\
-Arxiv pre-print
+ACM/IEEE CGO '25
 
 
 [Scaling Quantum Computations via Gate Virtualization](https://arxiv.org/abs/2406.18410)\
