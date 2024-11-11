@@ -1,6 +1,6 @@
 ## About me
 
-I’m a Ph.D. student at the [Chair of Computer Systems](https://dse.in.tum.de/), [Technical University of Munich (TUM)](https://www.tum.de/), supervised by [Prof. Pramod Bhatotia](https://dse.in.tum.de/bhatotia/). My research interests lie in the field of systems software for quantum computing, i.e., I bring systems abstractions and mechanisms into quantum computing for improved programmability, performance, and scalability. 
+I’m a Ph.D. student at the [Systems Research Group](https://dse.in.tum.de/), [Technical University of Munich (TUM)](https://www.tum.de/), supervised by [Prof. Pramod Bhatotia](https://dse.in.tum.de/bhatotia/). My research interests lie in the field of systems software for quantum computing, i.e., I bring systems abstractions and mechanisms into quantum computing for improved programmability, performance, and scalability. 
 
 In particular, I focus on compiler and OS mechanisms that address the low fidelity, vast heterogeneity, and underutilization of quantum devices and the users' experience with respect to job queuing times. To achieve this, I design systems that leverage *circuit cutting and knitting*, spatiotemporal multiplexing (aka scheduling), and hybrid quantum-classical resource estimation and management.
 
