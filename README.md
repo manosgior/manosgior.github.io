@@ -27,16 +27,17 @@ Arxiv pre-print
 
 [Weaver: A Retargetable Compiler Framework for FPQA Quantum Architectures](https://arxiv.org/abs/2409.07870)\
 Oğuzcan Kırmemiş, Francisco Romão, **Emmanouil Giortamis**, and Pramod Bhatotia\
-ACM/IEEE CGO '25
-
+ACM/IEEE International Symposium on Code Generation and Optimization (CGO) '25
+Acceptance Rate: <30%
 
 [Scaling Quantum Computations via Gate Virtualization](https://arxiv.org/abs/2406.18410)\
 Nathaniel Tornow, **Emmanouil Giortamis**, and Pramod Bhatotia\
-Arxiv pre-print
+ACM Programming Language Design and Implementation (PLDI) '25
 
 [FlexLog: A Shared Log for Stateful Serverless Computing](https://dl.acm.org/doi/abs/10.1145/3588195.3592993)\
 Dimitra Giantsidi, **Emmanouil Giortamis**, Nathaniel Tornow, Florin Dinu, and Pramod Bhatotia\
-ACM HPDC '23
+ACM High-Performance Parallel and Distributed Computing (HPDC) '23
+Acceptance Rate: <20%
 
 ## Posters & Talks
 [CAP Off: Local Reads and Linearizable Asynchronous Replication](http://2024.eurosys.org/posters/eurosys24posters-paper04.pdf)\
