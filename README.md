@@ -44,7 +44,7 @@ Acceptance Rate: <20%
 Dimitra Giantsidi, **Emmanouil Giortamis**, Julian Pritzi, Maurice Bailleu, Manos Kapritsos, Pramod Bhatotia\
 Arxiv pre-print
 
-The LAW theorem: Local Reads and Linearizable Asynchronous Replication\
+[The LAW theorem: Local Reads and Linearizable Asynchronous Replication](https://law-theorem.com/)\
 Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
 International Conference on Very Large Data Bases (VLDB) '25
 
