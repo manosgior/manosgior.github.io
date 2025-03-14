@@ -48,6 +48,8 @@ Arxiv pre-print
 Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
 International Conference on Very Large Data Bases (VLDB) '25
 
+\**Equal contribution*
+
 ## Posters & Talks
 [CAP Off: Local Reads and Linearizable Asynchronous Replication](http://2024.eurosys.org/posters/eurosys24posters-paper04.pdf)\
 Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
