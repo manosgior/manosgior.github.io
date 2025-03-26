@@ -25,7 +25,7 @@ Please call me Manos. Emmanouil sounds awkwardly official.
 Nathaniel Tornow, **Emmanouil Giortamis**, and Pramod Bhatotia\
 ACM Programming Language Design and Implementation (PLDI) '25
 
-[Weaver: A Retargetable Compiler Framework for FPQA Quantum Architectures](https://arxiv.org/abs/2409.07870)\
+[Weaver: A Retargetable Compiler Framework for FPQA Quantum Architectures](https://dl.acm.org/doi/10.1145/3696443.3708965)\
 Oğuzcan Kırmemiş, Francisco Romão, **Emmanouil Giortamis**, and Pramod Bhatotia\
 ACM/IEEE International Symposium on Code Generation and Optimization (CGO) '25
 
