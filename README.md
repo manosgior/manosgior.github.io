@@ -19,38 +19,39 @@ Please call me Manos. Emmanouil sounds awkwardly official.
 
 [QOS: A Quantum Operating System](https://arxiv.org/abs/2406.19120)\
 **Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, and Pramod Bhatotia\
-Arxiv pre-print
-
-[Orchestrating the Quantum Clouds with Qonductor](https://arxiv.org/abs/2408.04312)\
-**Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, Dmitry Lugovoy, and Pramod Bhatotia\
-Arxiv pre-print
-
-[Weaver: A Retargetable Compiler Framework for FPQA Quantum Architectures](https://arxiv.org/abs/2409.07870)\
-Oğuzcan Kırmemiş, Francisco Romão, **Emmanouil Giortamis**, and Pramod Bhatotia\
-ACM/IEEE International Symposium on Code Generation and Optimization (CGO) '25\
-Acceptance Rate: ~32%
+ USENIX Symposium on Operating Systems Design and Implementation (OSDI) '25
 
 [Scaling Quantum Computations via Gate Virtualization](https://arxiv.org/abs/2406.18410)\
 Nathaniel Tornow, **Emmanouil Giortamis**, and Pramod Bhatotia\
-ACM Programming Language Design and Implementation (PLDI) '25\
-Acceptance Rate: ~28%
+ACM Programming Language Design and Implementation (PLDI) '25
 
-[FlexLog: A Shared Log for Stateful Serverless Computing](https://dl.acm.org/doi/abs/10.1145/3588195.3592993)\
-Dimitra Giantsidi, **Emmanouil Giortamis**, Nathaniel Tornow, Florin Dinu, and Pramod Bhatotia\
-ACM High-Performance Parallel and Distributed Computing (HPDC) '23\
-Acceptance Rate: <20%
-
-[Recipe: Hardware-Accelerated Replication Protocols](https://arxiv.org/abs/2502.09251)\
-Dimitra Giantsidi, **Emmanouil Giortamis**, Julian Pritzi, Maurice Bailleu, Manos Kapritsos, Pramod Bhatotia\
-Arxiv pre-print
+[Weaver: A Retargetable Compiler Framework for FPQA Quantum Architectures](https://dl.acm.org/doi/10.1145/3696443.3708965)\
+Oğuzcan Kırmemiş, Francisco Romão, **Emmanouil Giortamis**, and Pramod Bhatotia\
+ACM/IEEE International Symposium on Code Generation and Optimization (CGO) '25
 
 [The LAW theorem: Local Reads and Linearizable Asynchronous Replication](https://law-theorem.com/)\
 Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
 International Conference on Very Large Data Bases (VLDB) '25
 
+[FlexLog: A Shared Log for Stateful Serverless Computing](https://dl.acm.org/doi/abs/10.1145/3588195.3592993)\
+Dimitra Giantsidi, **Emmanouil Giortamis**, Nathaniel Tornow, Florin Dinu, and Pramod Bhatotia\
+ACM High-Performance Parallel and Distributed Computing (HPDC) '23
+
+[Orchestrating the Quantum Clouds with Qonductor](https://arxiv.org/abs/2408.04312)\
+**Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, Dmitry Lugovoy, and Pramod Bhatotia\
+Arxiv pre-print
+
+[Recipe: Hardware-Accelerated Replication Protocols](https://arxiv.org/abs/2502.09251)\
+Dimitra Giantsidi, **Emmanouil Giortamis**, Julian Pritzi, Maurice Bailleu, Manos Kapritsos, Pramod Bhatotia\
+Arxiv pre-print
+
 \**Equal contribution*
 
 ## Posters & Talks
+The LAW Behind ALRs: Redefining Crash-Tolerant Reads\
+Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
+EuroSys '25
+
 [CAP Off: Local Reads and Linearizable Asynchronous Replication](http://2024.eurosys.org/posters/eurosys24posters-paper04.pdf)\
 Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
 EuroSys '24
