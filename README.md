@@ -21,29 +21,29 @@ Please call me Manos. Emmanouil sounds awkwardly official.
 **Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, and Pramod Bhatotia\
  USENIX Symposium on Operating Systems Design and Implementation (OSDI) '25
 
-[Orchestrating the Quantum Clouds with Qonductor](https://arxiv.org/abs/2408.04312)\
-**Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, Dmitry Lugovoy, and Pramod Bhatotia\
-Arxiv pre-print
+[Scaling Quantum Computations via Gate Virtualization](https://arxiv.org/abs/2406.18410)\
+Nathaniel Tornow, **Emmanouil Giortamis**, and Pramod Bhatotia\
+ACM Programming Language Design and Implementation (PLDI) '25
 
 [Weaver: A Retargetable Compiler Framework for FPQA Quantum Architectures](https://arxiv.org/abs/2409.07870)\
 Oğuzcan Kırmemiş, Francisco Romão, **Emmanouil Giortamis**, and Pramod Bhatotia\
 ACM/IEEE International Symposium on Code Generation and Optimization (CGO) '25
 
-[Scaling Quantum Computations via Gate Virtualization](https://arxiv.org/abs/2406.18410)\
-Nathaniel Tornow, **Emmanouil Giortamis**, and Pramod Bhatotia\
-ACM Programming Language Design and Implementation (PLDI) '25
+[The LAW theorem: Local Reads and Linearizable Asynchronous Replication](https://law-theorem.com/)\
+Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
+International Conference on Very Large Data Bases (VLDB) '25
 
 [FlexLog: A Shared Log for Stateful Serverless Computing](https://dl.acm.org/doi/abs/10.1145/3588195.3592993)\
 Dimitra Giantsidi, **Emmanouil Giortamis**, Nathaniel Tornow, Florin Dinu, and Pramod Bhatotia\
 ACM High-Performance Parallel and Distributed Computing (HPDC) '23
 
+[Orchestrating the Quantum Clouds with Qonductor](https://arxiv.org/abs/2408.04312)\
+**Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, Dmitry Lugovoy, and Pramod Bhatotia\
+Arxiv pre-print
+
 [Recipe: Hardware-Accelerated Replication Protocols](https://arxiv.org/abs/2502.09251)\
 Dimitra Giantsidi, **Emmanouil Giortamis**, Julian Pritzi, Maurice Bailleu, Manos Kapritsos, Pramod Bhatotia\
 Arxiv pre-print
-
-[The LAW theorem: Local Reads and Linearizable Asynchronous Replication](https://law-theorem.com/)\
-Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
-International Conference on Very Large Data Bases (VLDB) '25
 
 \**Equal contribution*
 
