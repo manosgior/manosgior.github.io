@@ -48,7 +48,7 @@ Arxiv pre-print
 \**Equal contribution*
 
 ## Posters & Talks
-The LAW Behind ALRs: Redefining Crash-Tolerant Reads
+The LAW Behind ALRs: Redefining Crash-Tolerant Reads\
 Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
 EuroSys '25
 
