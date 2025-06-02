@@ -17,11 +17,11 @@ Please call me Manos. Emmanouil sounds awkwardly official.
 ## Publications
 
 
-[QOS: A Quantum Operating System](https://arxiv.org/abs/2406.19120)\
+[QOS: Quantum Operating System](https://arxiv.org/abs/2406.19120)\
 **Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, and Pramod Bhatotia\
  USENIX Symposium on Operating Systems Design and Implementation (OSDI) '25
 
-[Scaling Quantum Computations via Gate Virtualization](https://arxiv.org/abs/2406.18410)\
+[QVM: Quantum Gate Virtualization Machine](https://arxiv.org/abs/2406.18410)\
 Nathaniel Tornow, **Emmanouil Giortamis**, and Pramod Bhatotia\
 ACM Programming Language Design and Implementation (PLDI) '25
 
