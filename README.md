@@ -25,7 +25,7 @@ Please call me Manos. Emmanouil sounds awkwardly official.
 **Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, Dmitry Lugovoy, and Pramod Bhatotia\
 The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC) '25
 
-[QVM: Quantum Gate Virtualization Machine](https://arxiv.org/abs/2406.18410)\
+[QVM: Quantum Gate Virtualization Machine](https://dl.acm.org/doi/10.1145/3729290)\
 Nathaniel Tornow, **Emmanouil Giortamis**, and Pramod Bhatotia\
 ACM Programming Language Design and Implementation (PLDI) '25
 
