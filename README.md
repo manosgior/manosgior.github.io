@@ -21,6 +21,10 @@ Please call me Manos. Emmanouil sounds awkwardly official.
 **Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, and Pramod Bhatotia\
  USENIX Symposium on Operating Systems Design and Implementation (OSDI) '25
 
+[Qonductor: A Cloud Orchestrator for Quantum Computing](https://arxiv.org/abs/2408.04312)\
+**Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, Dmitry Lugovoy, and Pramod Bhatotia\
+The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC) '25
+
 [QVM: Quantum Gate Virtualization Machine](https://arxiv.org/abs/2406.18410)\
 Nathaniel Tornow, **Emmanouil Giortamis**, and Pramod Bhatotia\
 ACM Programming Language Design and Implementation (PLDI) '25
@@ -37,10 +41,6 @@ International Conference on Very Large Data Bases (VLDB) '25
 Dimitra Giantsidi, **Emmanouil Giortamis**, Nathaniel Tornow, Florin Dinu, and Pramod Bhatotia\
 ACM High-Performance Parallel and Distributed Computing (HPDC) '23
 
-[Orchestrating the Quantum Clouds with Qonductor](https://arxiv.org/abs/2408.04312)\
-**Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, Dmitry Lugovoy, and Pramod Bhatotia\
-Arxiv pre-print
-
 [Recipe: Hardware-Accelerated Replication Protocols](https://arxiv.org/abs/2502.09251)\
 Dimitra Giantsidi, **Emmanouil Giortamis**, Julian Pritzi, Maurice Bailleu, Manos Kapritsos, Pramod Bhatotia\
 Arxiv pre-print
@@ -50,15 +50,15 @@ Arxiv pre-print
 ## Posters & Talks
 The LAW Behind ALRs: Redefining Crash-Tolerant Reads\
 Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
-EuroSys '25, Best poster nominee
+[EuroSys '23](https://2023.eurosys.org/docs/posters/eurosys23posters-final5.pdf), [EuroSys '24](http://2024.eurosys.org/posters/eurosys24posters-paper04.pdf), [EuroSys '25, Best poster nominee](https://2025.eurosys.org/posters/final/eurosys25posters-final16.pdf)
 
-[CAP Off: Local Reads and Linearizable Asynchronous Replication](http://2024.eurosys.org/posters/eurosys24posters-paper04.pdf)\
-Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
-EuroSys '24
+MCMit: Mid-circuit Measurement Error Mitigation\
+**Emmanouil Giortamis**, Felix Gust, Yanbin Chen, Xiaorang Guo, Benjamin Lienhard, Martin Schulz, Pramod Bhatotia\
+Invited talk at the Architectures for Emerging Systems ([ACES](https://www.ece.utexas.edu/research/areas/acses)) research group, led by [Prof. Poulami Das](https://www.poulamidas.com/).
 
-[Beyond reCAP: Local Reads and Linearizable Asynchronous Replication](https://2023.eurosys.org/docs/posters/eurosys23posters-final5.pdf)\
-Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
-EuroSys '23
+MCMit: Mid-circuit Measurement Error Mitigation\
+**Emmanouil Giortamis**, Felix Gust, Yanbin Chen, Xiaorang Guo, Benjamin Lienhard, Martin Schulz, Pramod Bhatotia\
+Invited talk at the [QUEST](https://quest-lab.cs.wisc.edu/) research group led by [Prof. Swamit Tannu](https://swamittannu.com/).
 
 \**Equal contribution*
 
