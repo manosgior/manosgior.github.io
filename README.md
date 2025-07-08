@@ -17,7 +17,7 @@ Please call me Manos. Emmanouil sounds awkwardly official.
 ## Publications
 
 
-[QOS: Quantum Operating System](https://arxiv.org/abs/2406.19120)\
+[QOS: Quantum Operating System](https://www.usenix.org/system/files/osdi25-giortamis.pdf)\
 **Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, and Pramod Bhatotia\
  USENIX Symposium on Operating Systems Design and Implementation (OSDI) '25
 
