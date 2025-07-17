@@ -53,12 +53,24 @@ Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bha
 [EuroSys '23](https://2023.eurosys.org/docs/posters/eurosys23posters-final5.pdf), [EuroSys '24](http://2024.eurosys.org/posters/eurosys24posters-paper04.pdf), [EuroSys '25, Best poster nominee](https://2025.eurosys.org/posters/final/eurosys25posters-final16.pdf)
 
 MCMit: Mid-circuit Measurement Error Mitigation\
-**Emmanouil Giortamis**, Felix Gust, Yanbin Chen, Xiaorang Guo, Benjamin Lienhard, Martin Schulz, Pramod Bhatotia\
-Invited talk at the Architectures for Emerging Systems ([ACES](https://www.ece.utexas.edu/research/areas/acses)) research group, led by [Prof. Poulami Das](https://www.poulamidas.com/).
+**Emmanouil Giortamis**\
+Invited talk at the Architectures for Emerging Systems ([ACES](https://www.ece.utexas.edu/research/areas/acses)) research group, led by [Prof. Poulami Das](https://www.poulamidas.com/)\
+Online/Zoom
 
 MCMit: Mid-circuit Measurement Error Mitigation\
-**Emmanouil Giortamis**, Felix Gust, Yanbin Chen, Xiaorang Guo, Benjamin Lienhard, Martin Schulz, Pramod Bhatotia\
-Invited talk at the [QUEST](https://quest-lab.cs.wisc.edu/) research group led by [Prof. Swamit Tannu](https://swamittannu.com/).
+**Emmanouil Giortamis**\
+Invited talk at the [QUEST](https://quest-lab.cs.wisc.edu/) research group led by [Prof. Swamit Tannu](https://swamittannu.com/)\
+Online/Zoom
+
+Software Systems for Quantum Computing\
+**Emmanouil Giortamis**\
+Invited talk at the [EQuS](https://equs.mit.edu/) research group led by [Prof. William Oliver](https://equs.mit.edu/william-d-oliver/)\
+Cambridge, MA, USA
+
+Software Systems for Neutral Atom Quantum Architectures\
+**Emmanouil Giortamis**\
+Invited talk at [QuEra Computing](https://www.quera.com/)\
+Boston, MA, USA
 
 \**Equal contribution*
 
