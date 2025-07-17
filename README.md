@@ -99,7 +99,7 @@ IEEE Quantum Week 2024, Student Volunteer
 
 ## Theses
 
-Real-time and parallel task scheduling for Quantum Computing\
+[Real-time and parallel task scheduling for Quantum Computing](https://github.com/TUM-DSE/research-work-archive/blob/main/archive/2024/winter/docs/msc_praski_real_time_and_parallel_task_scheduling_for_quantum_computing.pdf)\
 Marcin Praski\
 M.Sc. thesis
 
