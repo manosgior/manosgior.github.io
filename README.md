@@ -54,17 +54,17 @@ Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bha
 
 MCMit: Mid-circuit Measurement Error Mitigation\
 **Emmanouil Giortamis**\
-Invited talk at the Architectures for Emerging Systems ([ACES](https://www.ece.utexas.edu/research/areas/acses)) research group, led by [Prof. Poulami Das](https://www.poulamidas.com/)\
+Invited talk at the UT Austin Architectures for Emerging Systems ([ACES](https://www.ece.utexas.edu/research/areas/acses)) research group, led by [Prof. Poulami Das](https://www.poulamidas.com/)\
 Online/Zoom
 
 MCMit: Mid-circuit Measurement Error Mitigation\
 **Emmanouil Giortamis**\
-Invited talk at the [QUEST](https://quest-lab.cs.wisc.edu/) research group led by [Prof. Swamit Tannu](https://swamittannu.com/)\
+Invited talk at the University of Wisconsin-Madison [QUEST](https://quest-lab.cs.wisc.edu/) research group led by [Prof. Swamit Tannu](https://swamittannu.com/)\
 Online/Zoom
 
 Software Systems for Quantum Computing\
 **Emmanouil Giortamis**\
-Invited talk at the [EQuS](https://equs.mit.edu/) research group led by [Prof. William Oliver](https://equs.mit.edu/william-d-oliver/)\
+Invited talk at the MIT [EQuS](https://equs.mit.edu/) research group led by [Prof. William Oliver](https://equs.mit.edu/william-d-oliver/)\
 Cambridge, MA, USA
 
 Software Systems for Neutral Atom Quantum Architectures\
