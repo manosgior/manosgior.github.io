@@ -14,6 +14,7 @@ Please call me Manos. Emmanouil sounds awkwardly official.
 *Quantum Compilers, Quantum Error Mitigation, Hybrid Quantum-Classical Resource Estimation and Management, HPC, Distributed Systems*
 
 
+
 ## Publications
 
 
@@ -47,7 +48,9 @@ Arxiv pre-print
 
 \**Equal contribution*
 
-## Posters & Talks
+
+<details>
+<summary> ## Posters & Talks </summary>
 The LAW Behind ALRs: Redefining Crash-Tolerant Reads\
 Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
 [EuroSys '23](https://2023.eurosys.org/docs/posters/eurosys23posters-final5.pdf), [EuroSys '24](http://2024.eurosys.org/posters/eurosys24posters-paper04.pdf), [EuroSys '25, Best poster nominee](https://2025.eurosys.org/posters/final/eurosys25posters-final16.pdf)
@@ -73,6 +76,8 @@ Invited talk at [QuEra Computing](https://www.quera.com/)\
 Boston, MA, USA
 
 \**Equal contribution*
+
+</details>
 
 ## Honors & Awards
 
