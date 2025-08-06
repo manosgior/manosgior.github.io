@@ -5,25 +5,65 @@
 @import "fonts";
 
 
+/* Base styles */
 body {
     background-color: #fff;
-    padding:50px;
+    padding: 20px;
     font: 18px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color:#727272;
-    font-weight:400;
-  }
+    color: #727272;
+    font-weight: 400;
+}
 
 section {
-  width:1040px;
-  float:right;
-  padding-bottom:50px;
+    width: 100%;
+    max-width: 1040px;
+    float: none;
+    padding-bottom: 30px;
 }
 
 h1 {
-  font-size:28px;
+    font-size: 28px;
 }
 
 .wrapper {
-  width:1400px;
-  margin:0 auto;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1400px) {
+    .wrapper {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    section {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px;
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
 }
