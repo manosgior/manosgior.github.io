@@ -44,7 +44,7 @@ ACM High-Performance Parallel and Distributed Computing (HPDC) '23
 
 [Recipe: Hardware-Accelerated Replication Protocols](https://arxiv.org/abs/2502.09251)\
 Dimitra Giantsidi, **Emmanouil Giortamis**, Julian Pritzi, Maurice Bailleu, Manos Kapritsos, Pramod Bhatotia\
-Arxiv pre-print
+ACM/IFIP International Middleware Conference '25
 
 \**Equal contribution*
 
