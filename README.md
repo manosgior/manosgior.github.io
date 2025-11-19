@@ -24,7 +24,8 @@ Please call me Manos. Emmanouil sounds awkwardly official.
 
 [Qonductor: A Cloud Orchestrator for Quantum Computing](https://arxiv.org/abs/2408.04312)\
 **Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, Dmitry Lugovoy, and Pramod Bhatotia\
-The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC) '25
+The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC) '25\
+**Nominated for Best Student Paper Award**
 
 [QVM: Quantum Gate Virtualization Machine](https://dl.acm.org/doi/10.1145/3729290)\
 Nathaniel Tornow, **Emmanouil Giortamis**, and Pramod Bhatotia\
@@ -56,24 +57,29 @@ Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bha
 [EuroSys '23](https://2023.eurosys.org/docs/posters/eurosys23posters-final5.pdf), [EuroSys '24](http://2024.eurosys.org/posters/eurosys24posters-paper04.pdf), [EuroSys '25, Best poster nominee](https://2025.eurosys.org/posters/final/eurosys25posters-final16.pdf)
 
 MCMit: Mid-circuit Measurement Error Mitigation\
-**Emmanouil Giortamis**\
 Invited talk at the UT Austin Architectures for Emerging Systems ([ACES](https://www.ece.utexas.edu/research/areas/acses)) research group, led by [Prof. Poulami Das](https://www.poulamidas.com/)\
 Online/Zoom
 
 MCMit: Mid-circuit Measurement Error Mitigation\
-**Emmanouil Giortamis**\
 Invited talk at the University of Wisconsin-Madison [QUEST](https://quest-lab.cs.wisc.edu/) research group led by [Prof. Swamit Tannu](https://swamittannu.com/)\
 Online/Zoom
 
 Software Systems for Quantum Computing\
-**Emmanouil Giortamis**\
 Invited talk at the MIT [EQuS](https://equs.mit.edu/) research group led by [Prof. William Oliver](https://equs.mit.edu/william-d-oliver/)\
 Cambridge, MA, USA
 
 Software Systems for Neutral Atom Quantum Architectures\
-**Emmanouil Giortamis**\
 Invited talk at [QuEra Computing](https://www.quera.com/)\
 Boston, MA, USA
+
+Qonductor: A Cloud Orchestrator for Quantum Computing\
+Invited talk at the [Quantum Computing Applications and Systems (QCAS) Workshop](https://sites.google.com/view/qcas-2025/home), part of [ICCAD'25](https://2025.iccad.com/)
+Munich, Germany
+
+Software Systems for Quantum Computing Resesearch of Chair of Computer Systems\
+Invited talk at [Cisco Quantum Research](https://research.cisco.com/quantum-research)\
+Online
+
 
 \**Equal contribution*
 
