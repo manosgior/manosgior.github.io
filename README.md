@@ -88,7 +88,11 @@ Online
 ## Honors & Awards
 
 Distinction DEPROFOIT, University of Crete, Greece, Sept 2018\
-Undergraduate teaching assistant based on overall grades.
+Undergraduate teaching assistant based on overall grades
+
+Best Student Paper Award Nominee\
+Qonductor: A Cloud Orchestrator for Quantum Computing\
+The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC) '25
 
 ## Service
 
