@@ -76,7 +76,7 @@ Qonductor: A Cloud Orchestrator for Quantum Computing\
 Invited talk at the [Quantum Computing Applications and Systems (QCAS) Workshop](https://sites.google.com/view/qcas-2025/home), part of [ICCAD'25](https://2025.iccad.com/)\
 Munich, Germany
 
-Software Systems for Quantum Computing Resesearch of Chair of Computer Systems\
+Software Systems for Quantum Computing Research of the Chair of Computer Systems\
 Invited talk at [Cisco Quantum Research](https://research.cisco.com/quantum-research)\
 Online
 
