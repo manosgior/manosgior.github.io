@@ -22,7 +22,7 @@ Please call me Manos. Emmanouil sounds awkwardly official.
 **Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, and Pramod Bhatotia\
  USENIX Symposium on Operating Systems Design and Implementation (OSDI) '25
 
-[Qonductor: A Cloud Orchestrator for Quantum Computing](https://arxiv.org/abs/2408.04312)\
+[Qonductor: A Cloud Orchestrator for Quantum Computing](https://dl.acm.org/doi/full/10.1145/3712285.3759785)\
 **Emmanouil Giortamis**, Francisco Romão, Nathaniel Tornow, Dmitry Lugovoy, and Pramod Bhatotia\
 The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC) '25\
 **Nominated for Best Student Paper Award**
