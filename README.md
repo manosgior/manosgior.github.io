@@ -43,9 +43,10 @@ International Conference on Very Large Data Bases (VLDB) '25
 Dimitra Giantsidi, **Emmanouil Giortamis**, Nathaniel Tornow, Florin Dinu, and Pramod Bhatotia\
 ACM High-Performance Parallel and Distributed Computing (HPDC) '23
 
-[Recipe: Hardware-Accelerated Replication Protocols](https://arxiv.org/abs/2502.09251)\
+[Recipe: Hardware-Accelerated Replication Protocols](https://dl.acm.org/doi/10.1145/3721462.3770763)\
 Dimitra Giantsidi, **Emmanouil Giortamis**, Julian Pritzi, Maurice Bailleu, Manos Kapritsos, Pramod Bhatotia\
-ACM/IFIP International Middleware Conference '25
+ACM/IFIP International Middleware Conference '25\
+**Best Paper Award**
 
 \**Equal contribution*
 
@@ -84,12 +85,15 @@ Online
 \**Equal contribution*
 
 
-
 ## Honors & Awards
 
 Best Student Paper Award Finalist\
 Qonductor: A Cloud Orchestrator for Quantum Computing\
 The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC) '25
+
+Best Paper Award\
+Recipe: Hardware-Accelerated Replication Protocols\
+ACM/IFIP International Middleware Conference '25
 
 Distinction DEPROFOIT, University of Crete, Greece, Sept 2018\
 Undergraduate teaching assistant based on overall grades
