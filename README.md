@@ -39,14 +39,14 @@ ACM/IEEE International Symposium on Code Generation and Optimization (CGO) '25
 Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
 International Conference on Very Large Data Bases (VLDB) '25
 
-[FlexLog: A Shared Log for Stateful Serverless Computing](https://dl.acm.org/doi/abs/10.1145/3588195.3592993)\
-Dimitra Giantsidi, **Emmanouil Giortamis**, Nathaniel Tornow, Florin Dinu, and Pramod Bhatotia\
-ACM High-Performance Parallel and Distributed Computing (HPDC) '23
-
 [Recipe: Hardware-Accelerated Replication Protocols](https://dl.acm.org/doi/10.1145/3721462.3770763)\
 Dimitra Giantsidi, **Emmanouil Giortamis**, Julian Pritzi, Maurice Bailleu, Manos Kapritsos, Pramod Bhatotia\
 ACM/IFIP International Middleware Conference '25\
 **Best Paper Award**
+
+[FlexLog: A Shared Log for Stateful Serverless Computing](https://dl.acm.org/doi/abs/10.1145/3588195.3592993)\
+Dimitra Giantsidi, **Emmanouil Giortamis**, Nathaniel Tornow, Florin Dinu, and Pramod Bhatotia\
+ACM High-Performance Parallel and Distributed Computing (HPDC) '23
 
 \**Equal contribution*
 
@@ -59,11 +59,11 @@ Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bha
 
 MCMit: Mid-circuit Measurement Error Mitigation\
 Invited talk at the UT Austin Architectures for Emerging Systems ([ACES](https://www.ece.utexas.edu/research/areas/acses)) research group, led by [Prof. Poulami Das](https://www.poulamidas.com/)\
-Online/Zoom
+Online
 
 MCMit: Mid-circuit Measurement Error Mitigation\
 Invited talk at the University of Wisconsin-Madison [QUEST](https://quest-lab.cs.wisc.edu/) research group led by [Prof. Swamit Tannu](https://swamittannu.com/)\
-Online/Zoom
+Online
 
 Software Systems for Quantum Computing\
 Invited talk at the MIT [EQuS](https://equs.mit.edu/) research group led by [Prof. William Oliver](https://equs.mit.edu/william-d-oliver/)\
@@ -100,7 +100,7 @@ Undergraduate teaching assistant based on overall grades
 
 ## Service
 
-IEEE Quantum Week 2024, Student Volunteer
+IEEE Quantum Week 2024, Student Volunteer\
 [Quantum Journal](https://quantum-journal.org/) Reviewer
 
 ## Teaching
