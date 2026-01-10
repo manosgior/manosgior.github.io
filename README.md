@@ -10,7 +10,7 @@ Before joining TUM, I graduated from the [Computer Science Department](https://w
 
 Please call me Manos. Emmanouil sounds awkwardly official.
 
-### Research Interests
+## Research Interests
 *Quantum Compilers, Quantum Error Mitigation, Hybrid Quantum-Classical Resource Estimation and Management, HPC, Distributed Systems*
 
 
