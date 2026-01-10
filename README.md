@@ -10,9 +10,9 @@ Before joining TUM, I graduated from the [Computer Science Department](https://w
 
 Please call me Manos. Emmanouil sounds awkwardly official.
 
-#### Research Interests
+### Research Interests
 *Quantum Compilers, Quantum Error Mitigation, Hybrid Quantum-Classical Resource Estimation and Management, HPC, Distributed Systems*
 
 
-## Hobbies & Interests
+### Hobbies & Interests
 I *really* love cinema (I have watched more than 800 films), so follow me on Letterboxd if you have an account ;) [Letterboxd profile](https://letterboxd.com/manosgior/). I also like photography, focusing on landscapes, nature, and architecture. Despite being a computer scientist, I am pretty active: I enjoy hiking (I'm proud of my recent achievement of hiking the Andes, a 4000->5000 meters altitude hike), swimming, lifting weights in the gym, and running.
