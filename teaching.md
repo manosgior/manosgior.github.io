@@ -1,3 +1,8 @@
+---
+layout: default
+title: Teaching
+---
+
 ## Teaching
 
 #### TU Munich
