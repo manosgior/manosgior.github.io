@@ -1,3 +1,8 @@
+---
+layout: default
+title: Talks & Awards
+---
+
 ## Posters & Talks
 The LAW Behind ALRs: Redefining Crash-Tolerant Reads\
 Antonios Katsarakis*, **Emmanouil Giortamis**\*, Vasilis Gavrielatos, Pramod Bhatotia, Aleksandar Dragojevic, Boris Grot, Vijay Nagarajan, and Panagiota Fatourou\
