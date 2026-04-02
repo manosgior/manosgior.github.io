@@ -22,6 +22,10 @@ ACM Programming Language Design and Implementation (PLDI) '25
 Aleksandra Świerkowska, Jannik Pflieger, **Emmanouil Giortamis**, and Pramod Bhatotia\
 ACM SIGMETRICS '26
 
+[qTPU: Hybrid Tensor Networks for Quantum-Classical Acceleration]()\
+Nathaniel Tornow, **Emmanouil Giortamis**, Dennis Sprokholt, Christian B. Mendl, Pramod Bhatotia\
+ USENIX Symposium on Operating Systems Design and Implementation (OSDI) '26
+
 [Weaver: A Retargetable Compiler Framework for FPQA Quantum Architectures](https://dl.acm.org/doi/10.1145/3696443.3708965)\
 Oğuzcan Kırmemiş, Francisco Romão, **Emmanouil Giortamis**, and Pramod Bhatotia\
 ACM/IEEE International Symposium on Code Generation and Optimization (CGO) '25
