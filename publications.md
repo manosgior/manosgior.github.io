@@ -5,7 +5,7 @@ title: Publications
 
 ## Publications
 
-[ECCentric: An Empirical Analysis of Quantum Error Correction Codes](https://arxiv.org/abs/2511.01062)\
+[ECCentric: An Empirical Analysis of Quantum Error Correction Codes](https://dl.acm.org/doi/abs/10.1145/3805635)\
 Aleksandra Świerkowska, Jannik Pflieger, **Emmanouil Giortamis**, and Pramod Bhatotia\
 ACM SIGMETRICS '26
 
