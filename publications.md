@@ -6,11 +6,11 @@ title: Publications
 ## Publications
 
 [MCMit: Mid-circuit Measurement Error Mitigation](https://arxiv.org/abs/2604.25863)\
-Emmanouil Giortamis, Felix Gust, Aleksandra ´Swierkowska, Sandra Stankovic, Yanbin Chen, Innocenzo Fulginiti, Xiaorang Guo, Benjamin Lienhard, Martin Schulz, Pramod Bhatotia\
+**Emmanouil Giortamis**, Felix Gust, Aleksandra ´Swierkowska, Sandra Stankovic, Yanbin Chen, Innocenzo Fulginiti, Xiaorang Guo, Benjamin Lienhard, Martin Schulz, Pramod Bhatotia\
 IEEE/ACM International Symposium on Microarchitecture (MICRO) ’26
 
 Multi-Stage Mamba-Based Architecture for Fast and Scalable Superconducting Qubit Readout\
-Luca Otting, Xiaorang Guo, Emmanouil Giortamis, Benjamin Lienhard, Pramod Bhatotia, Martin Schulz\
+Luca Otting, Xiaorang Guo, **Emmanouil Giortamis**, Benjamin Lienhard, Pramod Bhatotia, Martin Schulz\
 IEEE International Conference on Quantum Computing & Engineering (QCE) '26
 
 [ECCentric: An Empirical Analysis of Quantum Error Correction Codes](https://dl.acm.org/doi/abs/10.1145/3805635)\
