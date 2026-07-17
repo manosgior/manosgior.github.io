@@ -155,7 +155,7 @@
     };
     var LINK_DIST = 110;
     var LINK_DIST2 = LINK_DIST * LINK_DIST;
-    var DETECT = 150;
+    var DETECT = 80;
     var DETECT2 = DETECT * DETECT;
 
     // Pre-rendered fuzzy "probability cloud" sprites, one per dot color.
