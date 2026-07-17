@@ -13,6 +13,7 @@
   var btnOne = document.getElementById("qt-one");
   var btnMeasure = document.getElementById("qt-measure");
   var measuring = false;
+  var fieldCollapse = null; // set by the quantum field module below
 
   function currentTheme() {
     var t = root.getAttribute("data-theme");
@@ -62,7 +63,10 @@
       setTimeout(function () {
         var last = i === steps.length - 1;
         applyTheme(step.theme, last);
-        if (last) measuring = false;
+        if (last) {
+          measuring = false;
+          if (fieldCollapse) fieldCollapse(outcome === "light" ? 0 : 1);
+        }
       }, step.delay);
     });
   }
@@ -151,6 +155,38 @@
     };
     var LINK_DIST = 110;
     var LINK_DIST2 = LINK_DIST * LINK_DIST;
+    var DETECT = 150;
+    var DETECT2 = DETECT * DETECT;
+
+    // Pre-rendered fuzzy "probability cloud" sprites, one per dot color.
+    var sprites = {};
+    function cloudSprite(rgb) {
+      var s = sprites[rgb];
+      if (!s) {
+        s = document.createElement("canvas");
+        s.width = 64;
+        s.height = 64;
+        var g = s.getContext("2d");
+        var grad = g.createRadialGradient(32, 32, 0, 32, 32, 32);
+        grad.addColorStop(0, "rgba(" + rgb + ",0.9)");
+        grad.addColorStop(0.4, "rgba(" + rgb + ",0.35)");
+        grad.addColorStop(1, "rgba(" + rgb + ",0)");
+        g.fillStyle = grad;
+        g.fillRect(0, 0, 64, 64);
+        sprites[rgb] = s;
+      }
+      return s;
+    }
+
+    // The cursor acts as a detector: nearby wavefunctions collapse.
+    var mx = -1e4;
+    var my = -1e4;
+    window.addEventListener("mousemove", function (e) { mx = e.clientX; my = e.clientY; });
+    document.addEventListener("mouseleave", function () { mx = -1e4; my = -1e4; });
+    window.addEventListener("touchmove", function (e) {
+      if (e.touches.length) { mx = e.touches[0].clientX; my = e.touches[0].clientY; }
+    }, { passive: true });
+    window.addEventListener("touchend", function () { mx = -1e4; my = -1e4; });
 
     var parts = [];
     var W = 0;
@@ -164,7 +200,9 @@
         vy: (Math.random() - 0.5) * 14,
         r: 1.5 + Math.random() * 2.1,
         phase: Math.random() * Math.PI * 2,
-        basis: Math.random() < 0.5 ? 0 : 1
+        basis: Math.random() < 0.5 ? 0 : 1,
+        c: 0,     // coherence: 0 = delocalized wave, 1 = collapsed particle
+        flash: 0  // brief glow after a measurement collapse
       };
     }
 
@@ -186,7 +224,8 @@
       var dt = Math.min((now - last) / 1000, 0.05);
       last = now;
 
-      var c = COLORS[currentTheme()] || COLORS.super;
+      var theme = currentTheme();
+      var pal = COLORS[theme] || COLORS.super;
       ctx.clearRect(0, 0, W, H);
 
       var i, j, p;
@@ -196,6 +235,17 @@
         p.y += p.vy * dt;
         if (p.x < -10) p.x = W + 10; else if (p.x > W + 10) p.x = -10;
         if (p.y < -10) p.y = H + 10; else if (p.y > H + 10) p.y = -10;
+
+        // Observation collapses the wavefunction fast; it delocalizes slowly.
+        var ddx = p.x - mx;
+        var ddy = p.y - my;
+        var observed = ddx * ddx + ddy * ddy < DETECT2;
+        var rate = observed ? 8 : 0.35;
+        p.c += ((observed ? 1 : 0) - p.c) * Math.min(1, rate * dt);
+        p.flash = Math.max(0, p.flash - 2.5 * dt * p.flash);
+
+        // In superposition the ensemble slowly re-mixes (thermal flips).
+        if (theme === "super" && Math.random() < 0.08 * dt) p.basis = 1 - p.basis;
       }
 
       ctx.lineWidth = 1;
@@ -208,7 +258,7 @@
           var d2 = dx * dx + dy * dy;
           if (d2 < LINK_DIST2) {
             var w = 1 - Math.sqrt(d2) / LINK_DIST;
-            ctx.strokeStyle = "rgba(" + c.link[0] + "," + (c.link[1] * w).toFixed(3) + ")";
+            ctx.strokeStyle = "rgba(" + pal.link[0] + "," + (pal.link[1] * w).toFixed(3) + ")";
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
             ctx.lineTo(b.x, b.y);
@@ -220,16 +270,41 @@
       var tsec = now / 1000;
       for (i = 0; i < parts.length; i++) {
         p = parts[i];
-        var dot = c.dots[p.basis];
+        var dot = pal.dots[p.basis];
         var breathe = 0.65 + 0.35 * Math.sin(tsec * 0.8 + p.phase);
-        ctx.fillStyle = "rgba(" + dot[0] + "," + (dot[1] * breathe).toFixed(3) + ")";
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.r, 0, 6.2832);
-        ctx.fill();
+        var alpha = dot[1] * breathe * (1 + 1.5 * p.flash);
+
+        // Wave part: a fuzzy probability cloud, fading out as coherence drops.
+        var wave = alpha * (1 - p.c);
+        if (wave > 0.01) {
+          var cr = p.r * (3.4 + 0.8 * Math.sin(tsec * 0.6 + p.phase));
+          ctx.globalAlpha = Math.min(1, wave);
+          ctx.drawImage(cloudSprite(dot[0]), p.x - cr, p.y - cr, cr * 2, cr * 2);
+          ctx.globalAlpha = 1;
+        }
+
+        // Particle part: a sharp, brighter dot where the state has collapsed.
+        if (p.c > 0.01) {
+          ctx.fillStyle = "rgba(" + dot[0] + "," + Math.min(1, alpha * 2 * p.c).toFixed(3) + ")";
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, 6.2832);
+          ctx.fill();
+        }
       }
 
       window.requestAnimationFrame(tick);
     }
+
+    // Measuring the theme qubit collapses the whole field to the outcome
+    // basis; the particles then gradually delocalize and re-mix.
+    fieldCollapse = function (basis) {
+      for (var k = 0; k < parts.length; k++) {
+        var q = parts[k];
+        q.basis = basis;
+        q.c = 1;
+        q.flash = 1;
+      }
+    };
 
     resize();
     window.addEventListener("resize", resize);
