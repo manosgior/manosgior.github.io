@@ -7,6 +7,20 @@
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <script>
+      // Apply the saved theme before first paint to avoid a flash of the wrong theme.
+      (function () {
+        var t = "super";
+        try { t = localStorage.getItem("qubit-theme") || t; } catch (e) {}
+        if (["light", "dark", "super"].indexOf(t) < 0) t = "super";
+        document.documentElement.setAttribute("data-theme", t);
+        try {
+          if (sessionStorage.getItem("q-name-collapsed") === "1") {
+            document.documentElement.classList.add("q-name-done");
+          }
+        } catch (e) {}
+      })();
+    </script>
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -17,8 +31,8 @@
         vertical-align: middle;
       }
       
-      /* Style for the text */
-      span {
+      /* Style for the text next to header icons */
+      .view span {
         vertical-align: middle;
         margin-left: 5px;
       }
@@ -46,13 +60,30 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        <h1 class="q-name">
+          <a href="{{ "/" | absolute_url }}" id="q-name-link" aria-label="Manos Giortamis — home">
+            <span class="q-super" aria-hidden="true"><span class="q-ket q-ket-a">|Emmanouil&#10217;</span><span class="q-plus"> + </span><span class="q-ket q-ket-b">|Manos&#10217;</span></span>
+            <span class="q-manos" aria-hidden="true">Manos</span>
+            <span class="q-surname" aria-hidden="true">Giortamis</span>
+          </a>
+        </h1>
+        <p class="q-hint" id="q-hint">superposed &mdash; hover to measure</p>
 
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
+
+        <div class="q-theme" role="group" aria-label="Site theme, presented as a qubit">
+          <span class="q-theme-label">theme qubit</span>
+          <span class="q-theme-buttons">
+            <button type="button" id="qt-zero" class="q-btn" title="Prepare |0&#10217; &mdash; light theme">|0&#10217;</button>
+            <button type="button" id="qt-plus" class="q-btn" title="Prepare (|0&#10217;+|1&#10217;)/&#8730;2 &mdash; superposition">|+&#10217;</button>
+            <button type="button" id="qt-one" class="q-btn" title="Prepare |1&#10217; &mdash; dark theme">|1&#10217;</button>
+            <button type="button" id="qt-measure" class="q-btn q-btn-measure" title="Measure the qubit &mdash; only a superposition collapses">measure</button>
+          </span>
+        </div>
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
@@ -97,6 +128,7 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/quantum.js" | relative_url }}"></script>
   </body>
 </html>
 

@@ -62,8 +62,288 @@ h1 {
         padding: 10px;
         font-size: 14px;
     }
-    
+
     h1 {
         font-size: 20px;
+    }
+}
+
+/* ==================================================================
+   Theme qubit: |0> = light, |1> = dark, |+> = gray superposition
+   ================================================================== */
+
+body {
+    transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+/* --- |1> dark --- */
+html[data-theme="dark"] body {
+    background-color: #101216;
+    color: #b6bdc4;
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6,
+html[data-theme="dark"] strong {
+    color: #e6e9ec;
+}
+
+html[data-theme="dark"] a {
+    color: #7ab5f5;
+}
+
+html[data-theme="dark"] a:hover,
+html[data-theme="dark"] a:focus {
+    color: #a8cef8;
+}
+
+html[data-theme="dark"] code,
+html[data-theme="dark"] pre {
+    background-color: #191d22;
+    border-color: #2a2f36;
+    color: #ccd3da;
+}
+
+html[data-theme="dark"] blockquote {
+    color: #9aa2ab;
+    border-left-color: #2a2f36;
+}
+
+html[data-theme="dark"] table th,
+html[data-theme="dark"] table td,
+html[data-theme="dark"] hr {
+    border-color: #2a2f36;
+}
+
+/* Dark glyph icons (location, mail, CV...) need a light chip to stay visible */
+html[data-theme="dark"] header .view img {
+    background-color: #e6e9ec;
+    border-radius: 4px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+/* --- |+> gray superposition --- */
+html[data-theme="super"] body {
+    background-color: #aeaeb5;
+    color: #26282c;
+    animation: q-super-drift 7s ease-in-out infinite alternate;
+}
+
+@keyframes q-super-drift {
+    from { background-color: #a8a8b0; }
+    to   { background-color: #b8b8bf; }
+}
+
+html[data-theme="super"] h1,
+html[data-theme="super"] h2,
+html[data-theme="super"] h3,
+html[data-theme="super"] h4,
+html[data-theme="super"] h5,
+html[data-theme="super"] h6,
+html[data-theme="super"] strong {
+    color: #141519;
+}
+
+html[data-theme="super"] a {
+    color: #14406e;
+}
+
+html[data-theme="super"] a:hover,
+html[data-theme="super"] a:focus {
+    color: #0c2c4e;
+}
+
+html[data-theme="super"] code,
+html[data-theme="super"] pre {
+    background-color: rgba(255, 255, 255, 0.35);
+    border-color: rgba(0, 0, 0, 0.15);
+    color: #26282c;
+}
+
+html[data-theme="super"] blockquote {
+    color: #3c3f45;
+    border-left-color: rgba(0, 0, 0, 0.25);
+}
+
+/* Navbar sits on its own dark background in every theme */
+html[data-theme] .navbar a,
+html[data-theme] .navbar a:hover,
+html[data-theme] .navbar a:focus {
+    color: #fff;
+}
+
+/* --- theme control --- */
+.q-theme {
+    margin: 14px 0;
+}
+
+.q-theme-label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    opacity: 0.65;
+}
+
+.q-btn {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 13px;
+    line-height: 1;
+    padding: 5px 9px;
+    margin: 0 4px 4px 0;
+    border: 1px solid rgba(127, 127, 127, 0.55);
+    border-radius: 999px;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.q-btn:hover {
+    border-color: currentColor;
+}
+
+.q-btn.active {
+    background-color: rgba(127, 127, 127, 0.28);
+    border-color: currentColor;
+    font-weight: 700;
+}
+
+.q-btn-measure {
+    opacity: 0.45;
+}
+
+.q-btn-measure.armed {
+    opacity: 1;
+}
+
+.q-btn-measure.q-shake {
+    animation: q-shake 0.3s ease;
+}
+
+@keyframes q-shake {
+    0%, 100% { transform: translateX(0); }
+    25%      { transform: translateX(-3px); }
+    50%      { transform: translateX(3px); }
+    75%      { transform: translateX(-2px); }
+}
+
+/* ==================================================================
+   Name superposition: (|Emmanouil> + |Manos>)/sqrt(2) -> |Manos>
+   ================================================================== */
+
+.q-name a {
+    text-decoration: none;
+}
+
+.q-super {
+    display: block;
+    font-size: 0.68em;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    letter-spacing: -0.01em;
+}
+
+.q-ket {
+    display: inline-block;
+}
+
+.q-ket-a {
+    animation: q-ket-osc 2.4s ease-in-out infinite;
+}
+
+.q-ket-b {
+    animation: q-ket-osc 2.4s ease-in-out infinite;
+    animation-delay: -1.2s;
+}
+
+@keyframes q-ket-osc {
+    0%, 100% { opacity: 1; text-shadow: 0 0 6px rgba(127, 160, 255, 0.35); }
+    50%      { opacity: 0.35; text-shadow: none; }
+}
+
+.q-plus {
+    opacity: 0.6;
+}
+
+.q-manos {
+    display: none;
+}
+
+.q-surname {
+    display: block;
+}
+
+/* Collapse flicker: fast decaying alternation before settling */
+.q-collapsing .q-ket-a,
+.q-collapsing .q-ket-b {
+    animation: q-ket-decay 0.65s steps(2, jump-none) infinite;
+}
+
+.q-collapsing .q-ket-b {
+    animation-delay: -0.16s;
+}
+
+@keyframes q-ket-decay {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.1; }
+}
+
+/* Collapsed state */
+html.q-name-done .q-super {
+    display: none;
+}
+
+html.q-name-done .q-manos {
+    display: inline;
+}
+
+html.q-name-done .q-surname {
+    display: inline;
+}
+
+.q-flash .q-manos {
+    animation: q-flash 0.9s ease-out;
+}
+
+@keyframes q-flash {
+    0%   { text-shadow: 0 0 18px rgba(127, 160, 255, 0.9); }
+    100% { text-shadow: none; }
+}
+
+.q-hint {
+    font-size: 12px;
+    font-style: italic;
+    opacity: 0.6;
+    margin: -8px 0 10px;
+    transition: opacity 0.8s ease;
+}
+
+.q-hint.q-hint-fade {
+    opacity: 0;
+}
+
+html.q-name-done .q-hint:not(.q-hint-live) {
+    display: none;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    html[data-theme="super"] body {
+        animation: none;
+    }
+
+    .q-ket-a,
+    .q-ket-b,
+    .q-collapsing .q-ket-a,
+    .q-collapsing .q-ket-b,
+    .q-flash .q-manos,
+    .q-btn-measure.q-shake {
+        animation: none;
     }
 }
