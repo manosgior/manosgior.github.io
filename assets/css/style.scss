@@ -250,99 +250,16 @@ html[data-theme] .navbar a:focus {
 }
 
 /* ==================================================================
-   Name superposition: (|Emmanouil> + |Manos>)/sqrt(2) -> |Manos>
+   Site name: only "Manos" is bold
    ================================================================== */
 
-.q-name a {
+.site-name {
     text-decoration: none;
+    font-weight: 400;
 }
 
-.q-super {
-    display: block;
-    font-size: 0.68em;
-    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-    letter-spacing: -0.01em;
-}
-
-.q-ket {
-    display: inline-block;
-}
-
-.q-ket-a {
-    animation: q-ket-osc 2.4s ease-in-out infinite;
-}
-
-.q-ket-b {
-    animation: q-ket-osc 2.4s ease-in-out infinite;
-    animation-delay: -1.2s;
-}
-
-@keyframes q-ket-osc {
-    0%, 100% { opacity: 1; text-shadow: 0 0 6px rgba(127, 160, 255, 0.35); }
-    50%      { opacity: 0.35; text-shadow: none; }
-}
-
-.q-plus {
-    opacity: 0.6;
-}
-
-.q-surname {
-    display: block;
-}
-
-/* Collapse flicker: fast decaying alternation before settling */
-.q-collapsing .q-ket-a,
-.q-collapsing .q-ket-b {
-    animation: q-ket-decay 0.65s steps(2, jump-none) infinite;
-}
-
-.q-collapsing .q-ket-b {
-    animation-delay: -0.16s;
-}
-
-@keyframes q-ket-decay {
-    0%, 100% { opacity: 1; }
-    50%      { opacity: 0.1; }
-}
-
-/* Measured state: both terms remain, amplitude concentrates on |Manos> */
-html.q-name-done .q-ket-a,
-html.q-name-done .q-plus {
-    animation: none;
-    opacity: 0.4;
-    text-shadow: none;
-}
-
-html.q-name-done .q-ket-b {
-    animation: none;
-    opacity: 1;
+.site-name strong {
     font-weight: 700;
-    text-shadow: 0 0 8px rgba(127, 160, 255, 0.4);
-}
-
-html.q-name-done .q-flash .q-ket-b {
-    animation: q-flash 0.9s ease-out;
-}
-
-@keyframes q-flash {
-    0%   { text-shadow: 0 0 18px rgba(127, 160, 255, 0.9); }
-    100% { text-shadow: none; }
-}
-
-.q-hint {
-    font-size: 12px;
-    font-style: italic;
-    opacity: 0.6;
-    margin: -8px 0 10px;
-    transition: opacity 0.8s ease;
-}
-
-.q-hint.q-hint-fade {
-    opacity: 0;
-}
-
-html.q-name-done .q-hint:not(.q-hint-live) {
-    display: none;
 }
 
 /* Respect reduced-motion preferences */
@@ -351,11 +268,6 @@ html.q-name-done .q-hint:not(.q-hint-live) {
         animation: none;
     }
 
-    .q-ket-a,
-    .q-ket-b,
-    .q-collapsing .q-ket-a,
-    .q-collapsing .q-ket-b,
-    html.q-name-done .q-flash .q-ket-b,
     .q-btn-measure.q-shake {
         animation: none;
     }

@@ -14,11 +14,6 @@
         try { t = localStorage.getItem("qubit-theme") || t; } catch (e) {}
         if (["light", "dark", "super"].indexOf(t) < 0) t = "super";
         document.documentElement.setAttribute("data-theme", t);
-        try {
-          if (sessionStorage.getItem("q-name-collapsed") === "1") {
-            document.documentElement.classList.add("q-name-done");
-          }
-        } catch (e) {}
       })();
     </script>
     <!--[if lt IE 9]>
@@ -60,13 +55,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="q-name">
-          <a href="{{ "/" | absolute_url }}" id="q-name-link" aria-label="Manos Giortamis — home">
-            <span class="q-super" aria-hidden="true"><span class="q-ket q-ket-a">|Emmanouil&#10217;</span><span class="q-plus"> + </span><span class="q-ket q-ket-b">|Manos&#10217;</span></span>
-            <span class="q-surname" aria-hidden="true">Giortamis</span>
-          </a>
-        </h1>
-        <p class="q-hint" id="q-hint">superposed &mdash; hover to measure</p>
+        <h1><a href="{{ "/" | absolute_url }}" class="site-name">Emmanouil (<strong>Manos</strong>) Giortamis</a></h1>
 
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />

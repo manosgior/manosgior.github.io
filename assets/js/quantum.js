@@ -80,56 +80,6 @@
   }
 
   /* ------------------------------------------------------------------ */
-  /* Name superposition: (|Emmanouil> + |Manos>)/sqrt(2), always         */
-  /* collapses to |Manos> on observation.                                */
-  /* ------------------------------------------------------------------ */
-
-  var nameLink = document.getElementById("q-name-link");
-  var hint = document.getElementById("q-hint");
-  var collapsing = false;
-
-  function nameDone() {
-    return root.classList.contains("q-name-done");
-  }
-
-  function collapseName() {
-    if (nameDone() || collapsing) return;
-    collapsing = true;
-    nameLink.classList.add("q-collapsing");
-
-    setTimeout(function () {
-      if (hint) {
-        hint.classList.add("q-hint-live");
-        hint.innerHTML = "measured: |Manos⟩ &middot; p = 1.00";
-      }
-      root.classList.add("q-name-done");
-      nameLink.classList.remove("q-collapsing");
-      nameLink.classList.add("q-flash");
-      try { sessionStorage.setItem("q-name-collapsed", "1"); } catch (e) {}
-      collapsing = false;
-
-      if (hint) {
-        setTimeout(function () { hint.classList.add("q-hint-fade"); }, 2600);
-        setTimeout(function () { hint.hidden = true; }, 3400);
-      }
-    }, 650);
-  }
-
-  if (nameLink) {
-    if (nameDone() && hint) hint.hidden = true;
-
-    nameLink.addEventListener("mouseenter", collapseName);
-    nameLink.addEventListener("focus", collapseName);
-    nameLink.addEventListener("click", function (e) {
-      // On touch devices the first tap measures; the next one navigates.
-      if (!nameDone()) {
-        e.preventDefault();
-        collapseName();
-      }
-    });
-  }
-
-  /* ------------------------------------------------------------------ */
   /* Quantum field: drifting wavefunctions behind the page. Unobserved   */
   /* particles move as fuzzy clouds (momentum known, position not).      */
   /* The cursor is a detector: observed particles collapse sharp and     */
