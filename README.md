@@ -13,4 +13,4 @@ Please call me Manos. Emmanouil is the formal birth name that is never used in G
 
 
 ### Hobbies & Interests
-I *really* love cinema (I have watched more than 800 films), so follow me on Letterboxd if you have an account ;) [Letterboxd profile](https://letterboxd.com/manosgior/). I also like photography, focusing on landscapes, nature, and architecture. Despite being a computer scientist, I am pretty active: I enjoy hiking (I'm proud of my recent achievement of hiking the Andes at 5000 meters altitude), swimming, lifting weights in the gym, and running.
+I *really* love cinema (I have watched more than 800 films). I also like photography, focusing on landscapes, nature, and architecture. Despite being a computer scientist, I am pretty active: I enjoy hiking (I'm proud of my recent achievement of hiking the Andes at 5000 meters altitude), swimming, lifting weights in the gym, and running.
