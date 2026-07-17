@@ -130,10 +130,12 @@
   }
 
   /* ------------------------------------------------------------------ */
-  /* Quantum field: faint drifting qubits behind the page. Dots that     */
-  /* pass close to each other briefly entangle (a fading link line).     */
-  /* In the |+> theme half the dots are light and half dark — both       */
-  /* basis states coexist until you measure.                             */
+  /* Quantum field: drifting wavefunctions behind the page. Unobserved   */
+  /* particles move as fuzzy clouds (momentum known, position not).      */
+  /* The cursor is a detector: observed particles collapse sharp and     */
+  /* freeze (position known, momentum not), and leave in a new random    */
+  /* direction — observation scrambled their momentum. In the |+> theme  */
+  /* half the dots are light and half dark until you measure.            */
   /* ------------------------------------------------------------------ */
 
   (function () {
@@ -147,14 +149,12 @@
     var ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    // dots: [rgb, maxAlpha] per basis state; link: [rgb, maxAlpha]
+    // dots: [rgb, maxAlpha] per basis state
     var COLORS = {
-      light: { dots: [["23,58,112", 0.46], ["23,58,112", 0.46]], link: ["23,58,112", 0.20] },
-      dark:  { dots: [["150,190,240", 0.38], ["150,190,240", 0.38]], link: ["150,190,240", 0.18] },
-      super: { dots: [["250,250,255", 0.72], ["20,22,28", 0.48]], link: ["60,62,70", 0.22] }
+      light: { dots: [["23,58,112", 0.46], ["23,58,112", 0.46]] },
+      dark:  { dots: [["150,190,240", 0.38], ["150,190,240", 0.38]] },
+      super: { dots: [["250,250,255", 0.72], ["20,22,28", 0.48]] }
     };
-    var LINK_DIST = 110;
-    var LINK_DIST2 = LINK_DIST * LINK_DIST;
     var DETECT = 80;
     var DETECT2 = DETECT * DETECT;
 
@@ -201,8 +201,9 @@
         r: 1.5 + Math.random() * 2.1,
         phase: Math.random() * Math.PI * 2,
         basis: Math.random() < 0.5 ? 0 : 1,
-        c: 0,     // coherence: 0 = delocalized wave, 1 = collapsed particle
-        flash: 0  // brief glow after a measurement collapse
+        c: 0,      // coherence: 0 = delocalized wave, 1 = collapsed particle
+        obs: false, // whether the cursor-detector is currently observing it
+        flash: 0   // brief glow after a measurement collapse
       };
     }
 
@@ -228,11 +229,13 @@
       var pal = COLORS[theme] || COLORS.super;
       ctx.clearRect(0, 0, W, H);
 
-      var i, j, p;
+      var i, p;
       for (i = 0; i < parts.length; i++) {
         p = parts[i];
-        p.x += p.vx * dt;
-        p.y += p.vy * dt;
+        // Heisenberg: coherence gates motion. A collapsed particle has a
+        // definite position, so it freezes; a delocalized cloud drifts.
+        p.x += p.vx * dt * (1 - p.c);
+        p.y += p.vy * dt * (1 - p.c);
         if (p.x < -10) p.x = W + 10; else if (p.x > W + 10) p.x = -10;
         if (p.y < -10) p.y = H + 10; else if (p.y > H + 10) p.y = -10;
 
@@ -240,31 +243,18 @@
         var ddx = p.x - mx;
         var ddy = p.y - my;
         var observed = ddx * ddx + ddy * ddy < DETECT2;
+        if (p.obs && !observed) {
+          // Observation scrambled its momentum: it departs on a new course.
+          p.vx = (Math.random() - 0.5) * 14;
+          p.vy = (Math.random() - 0.5) * 14;
+        }
+        p.obs = observed;
         var rate = observed ? 8 : 0.35;
         p.c += ((observed ? 1 : 0) - p.c) * Math.min(1, rate * dt);
         p.flash = Math.max(0, p.flash - 2.5 * dt * p.flash);
 
         // In superposition the ensemble slowly re-mixes (thermal flips).
         if (theme === "super" && Math.random() < 0.08 * dt) p.basis = 1 - p.basis;
-      }
-
-      ctx.lineWidth = 1;
-      for (i = 0; i < parts.length; i++) {
-        for (j = i + 1; j < parts.length; j++) {
-          var a = parts[i];
-          var b = parts[j];
-          var dx = a.x - b.x;
-          var dy = a.y - b.y;
-          var d2 = dx * dx + dy * dy;
-          if (d2 < LINK_DIST2) {
-            var w = 1 - Math.sqrt(d2) / LINK_DIST;
-            ctx.strokeStyle = "rgba(" + pal.link[0] + "," + (pal.link[1] * w).toFixed(3) + ")";
-            ctx.beginPath();
-            ctx.moveTo(a.x, a.y);
-            ctx.lineTo(b.x, b.y);
-            ctx.stroke();
-          }
-        }
       }
 
       var tsec = now / 1000;
@@ -296,13 +286,16 @@
     }
 
     // Measuring the theme qubit collapses the whole field to the outcome
-    // basis; the particles then gradually delocalize and re-mix.
+    // basis: everything freezes sharp for a moment, then delocalizes and
+    // drifts off with fresh (scrambled) momenta.
     fieldCollapse = function (basis) {
       for (var k = 0; k < parts.length; k++) {
         var q = parts[k];
         q.basis = basis;
         q.c = 1;
         q.flash = 1;
+        q.vx = (Math.random() - 0.5) * 14;
+        q.vy = (Math.random() - 0.5) * 14;
       }
     };
 
