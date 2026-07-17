@@ -124,4 +124,115 @@
       }
     });
   }
+
+  /* ------------------------------------------------------------------ */
+  /* Quantum field: faint drifting qubits behind the page. Dots that     */
+  /* pass close to each other briefly entangle (a fading link line).     */
+  /* In the |+> theme half the dots are light and half dark — both       */
+  /* basis states coexist until you measure.                             */
+  /* ------------------------------------------------------------------ */
+
+  (function () {
+    if (!window.requestAnimationFrame || !document.body) return;
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    var canvas = document.createElement("canvas");
+    canvas.id = "q-field";
+    canvas.setAttribute("aria-hidden", "true");
+    document.body.appendChild(canvas);
+    var ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    // dots: [rgb, maxAlpha] per basis state; link: [rgb, maxAlpha]
+    var COLORS = {
+      light: { dots: [["38,86,150", 0.14], ["38,86,150", 0.14]], link: ["38,86,150", 0.06] },
+      dark:  { dots: [["150,190,240", 0.18], ["150,190,240", 0.18]], link: ["150,190,240", 0.08] },
+      super: { dots: [["250,250,255", 0.50], ["20,22,28", 0.32]], link: ["70,72,80", 0.10] }
+    };
+    var LINK_DIST = 110;
+    var LINK_DIST2 = LINK_DIST * LINK_DIST;
+
+    var parts = [];
+    var W = 0;
+    var H = 0;
+
+    function spawn() {
+      return {
+        x: Math.random() * W,
+        y: Math.random() * H,
+        vx: (Math.random() - 0.5) * 14,
+        vy: (Math.random() - 0.5) * 14,
+        r: 1 + Math.random() * 1.4,
+        phase: Math.random() * Math.PI * 2,
+        basis: Math.random() < 0.5 ? 0 : 1
+      };
+    }
+
+    function resize() {
+      var dpr = Math.min(window.devicePixelRatio || 1, 2);
+      W = window.innerWidth;
+      H = window.innerHeight;
+      canvas.width = W * dpr;
+      canvas.height = H * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      var target = Math.min(70, Math.max(24, Math.round(W * H / 26000)));
+      while (parts.length < target) parts.push(spawn());
+      parts.length = target;
+    }
+
+    var last = 0;
+    function tick(now) {
+      if (!last) last = now;
+      var dt = Math.min((now - last) / 1000, 0.05);
+      last = now;
+
+      var c = COLORS[currentTheme()] || COLORS.super;
+      ctx.clearRect(0, 0, W, H);
+
+      var i, j, p;
+      for (i = 0; i < parts.length; i++) {
+        p = parts[i];
+        p.x += p.vx * dt;
+        p.y += p.vy * dt;
+        if (p.x < -10) p.x = W + 10; else if (p.x > W + 10) p.x = -10;
+        if (p.y < -10) p.y = H + 10; else if (p.y > H + 10) p.y = -10;
+      }
+
+      ctx.lineWidth = 1;
+      for (i = 0; i < parts.length; i++) {
+        for (j = i + 1; j < parts.length; j++) {
+          var a = parts[i];
+          var b = parts[j];
+          var dx = a.x - b.x;
+          var dy = a.y - b.y;
+          var d2 = dx * dx + dy * dy;
+          if (d2 < LINK_DIST2) {
+            var w = 1 - Math.sqrt(d2) / LINK_DIST;
+            ctx.strokeStyle = "rgba(" + c.link[0] + "," + (c.link[1] * w).toFixed(3) + ")";
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.stroke();
+          }
+        }
+      }
+
+      var tsec = now / 1000;
+      for (i = 0; i < parts.length; i++) {
+        p = parts[i];
+        var dot = c.dots[p.basis];
+        var breathe = 0.65 + 0.35 * Math.sin(tsec * 0.8 + p.phase);
+        ctx.fillStyle = "rgba(" + dot[0] + "," + (dot[1] * breathe).toFixed(3) + ")";
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, 6.2832);
+        ctx.fill();
+      }
+
+      window.requestAnimationFrame(tick);
+    }
+
+    resize();
+    window.addEventListener("resize", resize);
+    window.requestAnimationFrame(tick);
+  })();
 })();

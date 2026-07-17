@@ -175,6 +175,17 @@ html[data-theme="super"] img {
     filter: brightness(0.85);
 }
 
+/* --- quantum field background --- */
+#q-field {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+}
+
 /* Navbar sits on its own dark background in every theme */
 html[data-theme] .navbar a,
 html[data-theme] .navbar a:hover,
