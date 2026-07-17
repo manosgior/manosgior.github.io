@@ -15,6 +15,12 @@ title: Publications
 <h3>Pre-prints</h3>
 
 <div class="pub" data-topic="quantum">
+  <p class="pub-title">Oraqle: An Empirical Analysis of Qubit Readout and Discriminators in Quantum Error Correction</p>
+  <p class="pub-authors"><strong>Emmanouil Giortamis</strong>, Aleksandra Świerkowska, Sandra Stankovic, Felix Gust, Benjamin Lienhard, Pramod Bhatotia</p>
+  <p class="pub-venue">Pre-print, 2026</p>
+</div>
+
+<div class="pub" data-topic="quantum">
   <p class="pub-title"><a href="https://arxiv.org/pdf/2601.08504">MultiQ: Multi-Programming Neutral Atom Quantum Architectures</a></p>
   <p class="pub-authors">Francisco Romão, Daniel Vonk, <strong>Emmanouil Giortamis</strong>, Dennis Sprokholt, Pramod Bhatotia</p>
   <p class="pub-venue">arXiv pre-print, 2026</p>
@@ -30,13 +36,13 @@ title: Publications
 </div>
 
 <div class="pub-section">
-<h3>Conference &amp; Journal Papers</h3>
+<h3>Conference Papers</h3>
 
 <div class="pub" data-topic="quantum">
   <p class="pub-title"><a href="https://arxiv.org/abs/2604.25863">MCMit: Mid-circuit Measurement Error Mitigation</a></p>
   <p class="pub-authors"><strong>Emmanouil Giortamis</strong>, Felix Gust, Aleksandra Świerkowska, Sandra Stankovic, Yanbin Chen, Innocenzo Fulginiti, Xiaorang Guo, Benjamin Lienhard, Martin Schulz, Pramod Bhatotia</p>
   <p class="pub-venue">IEEE/ACM International Symposium on Microarchitecture (MICRO) '26</p>
-  <p class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2604.25863">arXiv</a></p>
+  <p class="pub-links"><a class="pub-link" href="https://github.com/manosgior/MCMit">Code</a> <a class="pub-link" href="https://arxiv.org/abs/2604.25863">arXiv</a></p>
 </div>
 
 <div class="pub" data-topic="quantum">
@@ -84,7 +90,7 @@ title: Publications
   <p class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3721462.3770763">Recipe: Hardware-Accelerated Replication Protocols</a> <span class="pub-award">Best Paper Award</span></p>
   <p class="pub-authors">Dimitra Giantsidi, <strong>Emmanouil Giortamis</strong>, Julian Pritzi, Maurice Bailleu, Manos Kapritsos, Pramod Bhatotia</p>
   <p class="pub-venue">ACM/IFIP International Middleware Conference '25</p>
-  <p class="pub-links"><a class="pub-link" href="https://dse.in.tum.de/wp-content/uploads/2025/12/recipe-middleware-2025.pdf">Paper</a> <a class="pub-link" href="https://dse.in.tum.de/wp-content/uploads/2025/12/recipe-middleware-2025-slides.pdf">Slides</a> <a class="pub-link" href="https://github.com/TUM-DSE/Recipe">Code</a> <a class="pub-link" href="https://arxiv.org/pdf/2502.09251">Full version</a></p>
+  <p class="pub-links"><a class="pub-link" href="https://dse.in.tum.de/wp-content/uploads/2025/12/recipe-middleware-2025.pdf">Paper</a> <a class="pub-link" href="https://dse.in.tum.de/wp-content/uploads/2025/12/recipe-middleware-2025-slides.pdf">Slides</a> <a class="pub-link" href="https://github.com/TUM-DSE/Recipe">Code</a></p>
 </div>
 
 <div class="pub" data-topic="quantum">
