@@ -96,7 +96,7 @@
     setTimeout(function () {
       if (hint) {
         hint.classList.add("q-hint-live");
-        hint.innerHTML = "collapsed to |Manos⟩ &middot; p = 1.00";
+        hint.innerHTML = "measured: |Manos⟩ &middot; p = 1.00";
       }
       root.classList.add("q-name-done");
       nameLink.classList.remove("q-collapsing");
