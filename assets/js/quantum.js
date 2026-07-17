@@ -145,9 +145,9 @@
 
     // dots: [rgb, maxAlpha] per basis state; link: [rgb, maxAlpha]
     var COLORS = {
-      light: { dots: [["38,86,150", 0.30], ["38,86,150", 0.30]], link: ["38,86,150", 0.14] },
-      dark:  { dots: [["150,190,240", 0.32], ["150,190,240", 0.32]], link: ["150,190,240", 0.15] },
-      super: { dots: [["250,250,255", 0.60], ["20,22,28", 0.40]], link: ["60,62,70", 0.18] }
+      light: { dots: [["23,58,112", 0.46], ["23,58,112", 0.46]], link: ["23,58,112", 0.20] },
+      dark:  { dots: [["150,190,240", 0.38], ["150,190,240", 0.38]], link: ["150,190,240", 0.18] },
+      super: { dots: [["250,250,255", 0.72], ["20,22,28", 0.48]], link: ["60,62,70", 0.22] }
     };
     var LINK_DIST = 110;
     var LINK_DIST2 = LINK_DIST * LINK_DIST;
@@ -162,7 +162,7 @@
         y: Math.random() * H,
         vx: (Math.random() - 0.5) * 14,
         vy: (Math.random() - 0.5) * 14,
-        r: 1 + Math.random() * 1.4,
+        r: 1.5 + Math.random() * 2.1,
         phase: Math.random() * Math.PI * 2,
         basis: Math.random() < 0.5 ? 0 : 1
       };
