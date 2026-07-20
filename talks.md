@@ -51,5 +51,6 @@ Undergraduate teaching assistant based on overall grades
 
 IEEE Quantum Week 2024, Student Volunteer\
 [Quantum Journal](https://quantum-journal.org/) Reviewer\
-[ACM Transactions on Architecture and Code Optimization](https://dl.acm.org/journal/taco) Journal Reviewer
+[ACM Transactions on Architecture and Code Optimization](https://dl.acm.org/journal/taco) Journal Reviewer\
+[IEEE Access](https://ieeeaccess.ieee.org/) Journal Reviewer
 
