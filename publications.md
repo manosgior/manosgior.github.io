@@ -72,7 +72,7 @@ title: Publications
 </div>
 
 <div class="pub" data-topic="quantum">
-  <p class="pub-title"><a href="https://dl.acm.org/doi/full/10.1145/3712285.3759785">Qonductor: A Cloud Orchestrator for Quantum Computing</a> <span class="pub-award">Best Student Paper Award Finalist</span></p>
+  <p class="pub-title"><a href="https://dl.acm.org/doi/full/10.1145/3712285.3759785">Qonductor: A Cloud Orchestrator for Quantum Computing</a> <span class="pub-award">🥈 Best Student Paper Award Finalist</span></p>
   <p class="pub-authors"><strong>Emmanouil Giortamis</strong>, Francisco Romão, Nathaniel Tornow, Dmitry Lugovoy, and Pramod Bhatotia</p>
   <p class="pub-venue">The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC) '25</p>
   <p class="pub-links"><a class="pub-link" href="https://dse.in.tum.de/wp-content/uploads/2025/09/Qonductor-SC-2025.pdf">Paper</a> <a class="pub-link" href="https://dse.in.tum.de/wp-content/uploads/2025/11/Qonductor-SC-2025-slides.pdf">Slides</a> <a class="pub-link" href="https://youtu.be/mkwQL5Uu7hM">Video</a> <a class="pub-link" href="https://github.com/manosgior/Qonductor-SC25">Code</a> <a class="pub-link" href="https://www.arxiv.org/abs/2408.04312">arXiv</a></p>
@@ -93,7 +93,7 @@ title: Publications
 </div>
 
 <div class="pub" data-topic="distributed">
-  <p class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3721462.3770763">Recipe: Hardware-Accelerated Replication Protocols</a> <span class="pub-award">Best Paper Award</span></p>
+  <p class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3721462.3770763">Recipe: Hardware-Accelerated Replication Protocols</a> <span class="pub-award">🏆 Best Paper Award</span></p>
   <p class="pub-authors">Dimitra Giantsidi, <strong>Emmanouil Giortamis</strong>, Julian Pritzi, Maurice Bailleu, Manos Kapritsos, Pramod Bhatotia</p>
   <p class="pub-venue">ACM/IFIP International Middleware Conference '25</p>
   <p class="pub-links"><a class="pub-link" href="https://dse.in.tum.de/wp-content/uploads/2025/12/recipe-middleware-2025.pdf">Paper</a> <a class="pub-link" href="https://dse.in.tum.de/wp-content/uploads/2025/12/recipe-middleware-2025-slides.pdf">Slides</a> <a class="pub-link" href="https://github.com/TUM-DSE/Recipe">Code</a></p>

@@ -36,11 +36,11 @@ Online
 
 ## Honors & Awards
 
-Best Student Paper Award Finalist\
+🥈 Best Student Paper Award Finalist\
 Qonductor: A Cloud Orchestrator for Quantum Computing\
 The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC) '25
 
-Best Paper Award\
+🏆 Best Paper Award\
 Recipe: Hardware-Accelerated Replication Protocols\
 ACM/IFIP International Middleware Conference '25
 
