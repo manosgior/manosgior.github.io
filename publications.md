@@ -39,6 +39,12 @@ title: Publications
 <h3>Conference Papers</h3>
 
 <div class="pub" data-topic="quantum">
+  <p class="pub-title">AtomGuard: An Architecture-Centric ISA for Verified Compilation on Neutral Atom Quantum Architectures</p>
+  <p class="pub-authors">Francisco Romão, Nathaniel Tornow, <strong>Emmanouil Giortamis</strong>, Dennis Sprokholt, and Pramod Bhatotia</p>
+  <p class="pub-venue">ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) '27</p>
+</div>
+
+<div class="pub" data-topic="quantum">
   <p class="pub-title"><a href="https://arxiv.org/abs/2604.25863">MCMit: Mid-circuit Measurement Error Mitigation</a></p>
   <p class="pub-authors"><strong>Emmanouil Giortamis</strong>, Felix Gust, Aleksandra Świerkowska, Sandra Stankovic, Yanbin Chen, Innocenzo Fulginiti, Xiaorang Guo, Benjamin Lienhard, Martin Schulz, Pramod Bhatotia</p>
   <p class="pub-venue">IEEE/ACM International Symposium on Microarchitecture (MICRO) '26</p>
