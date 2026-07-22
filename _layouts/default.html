@@ -10,9 +10,9 @@
     <script>
       // Apply the saved theme before first paint to avoid a flash of the wrong theme.
       (function () {
-        var t = "super";
-        try { t = localStorage.getItem("qubit-theme") || t; } catch (e) {}
-        if (["light", "dark", "super"].indexOf(t) < 0) t = "super";
+        var t = "light";
+        try { t = localStorage.getItem("site-theme") || t; } catch (e) {}
+        if (["light", "dark"].indexOf(t) < 0) t = "light";
         document.documentElement.setAttribute("data-theme", t);
       })();
     </script>
@@ -63,13 +63,11 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        <div class="q-theme" role="group" aria-label="Site theme, presented as a qubit">
+        <div class="q-theme" role="group" aria-label="Site theme">
           <span class="q-theme-label">Change theme</span>
           <span class="q-theme-buttons">
-            <button type="button" id="qt-zero" class="q-btn" title="Prepare |0&#10217; &mdash; light theme">|0&#10217;</button>
-            <button type="button" id="qt-plus" class="q-btn" title="Prepare (|0&#10217;+|1&#10217;)/&#8730;2 &mdash; superposition">|+&#10217;</button>
-            <button type="button" id="qt-one" class="q-btn" title="Prepare |1&#10217; &mdash; dark theme">|1&#10217;</button>
-            <button type="button" id="qt-measure" class="q-btn q-btn-measure" title="Measure the qubit &mdash; only a superposition collapses">measure</button>
+            <button type="button" id="qt-light" class="q-btn" title="Light theme">Light</button>
+            <button type="button" id="qt-dark" class="q-btn" title="Dark theme">Dark</button>
           </span>
         </div>
 

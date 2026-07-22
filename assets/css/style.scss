@@ -69,7 +69,7 @@ h1 {
 }
 
 /* ==================================================================
-   Theme qubit: |0> = light, |1> = dark, |+> = gray superposition
+   Theme: light / dark
    ================================================================== */
 
 body {
@@ -127,65 +127,6 @@ html[data-theme="dark"] header .view img {
     box-sizing: border-box;
 }
 
-/* --- |+> gray superposition --- */
-html[data-theme="super"] body {
-    background-color: #aeaeb5;
-    color: #26282c;
-    animation: q-super-drift 7s ease-in-out infinite alternate;
-}
-
-@keyframes q-super-drift {
-    from { background-color: #a8a8b0; }
-    to   { background-color: #b8b8bf; }
-}
-
-html[data-theme="super"] h1,
-html[data-theme="super"] h2,
-html[data-theme="super"] h3,
-html[data-theme="super"] h4,
-html[data-theme="super"] h5,
-html[data-theme="super"] h6,
-html[data-theme="super"] strong {
-    color: #141519;
-}
-
-html[data-theme="super"] a {
-    color: #14406e;
-}
-
-html[data-theme="super"] a:hover,
-html[data-theme="super"] a:focus {
-    color: #0c2c4e;
-}
-
-html[data-theme="super"] code,
-html[data-theme="super"] pre {
-    background-color: rgba(255, 255, 255, 0.35);
-    border-color: rgba(0, 0, 0, 0.15);
-    color: #26282c;
-}
-
-html[data-theme="super"] blockquote {
-    color: #3c3f45;
-    border-left-color: rgba(0, 0, 0, 0.25);
-}
-
-/* Tone bright images (profile photo, white icons) down to match the gray */
-html[data-theme="super"] img {
-    filter: brightness(0.85);
-}
-
-/* --- quantum field background --- */
-#q-field {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    pointer-events: none;
-}
-
 /* Navbar sits on its own dark background in every theme */
 html[data-theme] .navbar a,
 html[data-theme] .navbar a:hover,
@@ -228,25 +169,6 @@ html[data-theme] .navbar a:focus {
     background-color: rgba(127, 127, 127, 0.28);
     border-color: currentColor;
     font-weight: 700;
-}
-
-.q-btn-measure {
-    opacity: 0.45;
-}
-
-.q-btn-measure.armed {
-    opacity: 1;
-}
-
-.q-btn-measure.q-shake {
-    animation: q-shake 0.3s ease;
-}
-
-@keyframes q-shake {
-    0%, 100% { transform: translateX(0); }
-    25%      { transform: translateX(-3px); }
-    50%      { transform: translateX(3px); }
-    75%      { transform: translateX(-2px); }
 }
 
 /* ==================================================================
@@ -294,31 +216,6 @@ html[data-theme] .navbar a:focus {
     opacity: 0.85;
 }
 
-.pub-links {
-    margin-top: 6px !important;
-}
-
-.pub-link {
-    display: inline-block;
-    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-    font-size: 12px;
-    line-height: 1;
-    padding: 4px 9px;
-    margin: 2px 4px 2px 0;
-    border: 1px solid rgba(127, 127, 127, 0.55);
-    border-radius: 999px;
-    text-decoration: none;
-    color: inherit;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
-}
-
-.pub-link:hover,
-.pub-link:focus {
-    border-color: currentColor;
-    background-color: rgba(127, 127, 127, 0.15);
-    text-decoration: none;
-}
-
 .pub-award {
     display: inline-block;
     font-size: 12px;
@@ -333,10 +230,6 @@ html[data-theme] .navbar a:focus {
 
 html[data-theme="dark"] .pub-award {
     color: #e3b341;
-}
-
-html[data-theme="super"] .pub-award {
-    color: #6b4a00;
 }
 
 .pub-footnote {
@@ -356,15 +249,4 @@ html[data-theme="super"] .pub-award {
 
 .site-name strong {
     font-weight: 700;
-}
-
-/* Respect reduced-motion preferences */
-@media (prefers-reduced-motion: reduce) {
-    html[data-theme="super"] body {
-        animation: none;
-    }
-
-    .q-btn-measure.q-shake {
-        animation: none;
-    }
 }
