@@ -15,9 +15,21 @@ title: Publications
 <h3>Pre-prints</h3>
 
 <div class="pub" data-topic="quantum">
-  <p class="pub-title">Oraqle: An Empirical Analysis of Qubit Readout and Discriminators in Quantum Error Correction</p>
+  <p class="pub-title"><a href="https://arxiv.org/abs/2608.02030">Zero-G: A Pre-Decoder-Aware Decoder for Quantum Error Correction</a></p>
+  <p class="pub-authors">Peter Wegmann, Theofilos Augoustis, Aleksandra Świerkowska, <strong>Emmanouil Giortamis</strong>, Pramod Bhatotia</p>
+  <p class="pub-venue">arXiv pre-print, 2026</p>
+</div>
+
+<div class="pub" data-topic="quantum">
+  <p class="pub-title">Harvest: Resource-Aware Quantum Compilation for Magic State Protocols</p>
+  <p class="pub-authors">Jannik Pflieger, Aleksandra Świerkowska, <strong>Emmanouil Giortamis</strong>, Pramod Bhatotia</p>
+  <p class="pub-venue">arXiv pre-print, 2026</p>
+</div>
+
+<div class="pub" data-topic="quantum">
+  <p class="pub-title"><a href="https://arxiv.org/abs/2608.01939">Oraqle: An Empirical Analysis of Qubit Readout and Discriminators in Quantum Error Correction</a></p>
   <p class="pub-authors"><strong>Emmanouil Giortamis</strong>, Aleksandra Świerkowska, Sandra Stankovic, Felix Gust, Benjamin Lienhard, Pramod Bhatotia</p>
-  <p class="pub-venue">Pre-print, 2026</p>
+  <p class="pub-venue">arXiv pre-print, 2026</p>
 </div>
 
 <div class="pub" data-topic="quantum">
@@ -35,7 +47,7 @@ title: Publications
 <div class="pub" data-topic="quantum">
   <p class="pub-title">AtomGuard: An Architecture-Centric ISA for Verified Compilation on Neutral Atom Quantum Architectures</p>
   <p class="pub-authors">Francisco Romão, Nathaniel Tornow, <strong>Emmanouil Giortamis</strong>, Dennis Sprokholt, and Pramod Bhatotia</p>
-  <p class="pub-venue">Pre-print, 2026</p>
+  <p class="pub-venue">arXiv pre-print, 2026</p>
 </div>
 </div>
 
