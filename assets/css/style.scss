@@ -459,34 +459,38 @@ pre code {
 .pub-links {
     display: flex;
     flex-wrap: wrap;
-    gap: .3rem;
-    margin: .5rem 0 0;
+    gap: .5rem;
+    margin: .7rem 0 0;
 }
 
 .pub-btn {
-    font-family: Menlo, Monaco, "Courier New", monospace;
-    font-size: .68rem;
+    display: inline-flex;
+    align-items: center;
+    font-family: inherit;
+    font-size: .78rem;
+    font-weight: 400;
     line-height: 1;
-    padding: 5px 9px;
-    border: 1px solid rgba(127, 127, 127, .5);
-    border-radius: 999px;
-    background: transparent;
-    color: var(--muted-color);
+    padding: 8px 14px;
+    border: 1px solid rgba(127, 127, 127, .3);
+    border-radius: 6px;
+    background-color: rgba(127, 127, 127, .13);
+    color: var(--text-color);
     cursor: pointer;
     text-decoration: none;
-    transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+    transition: background-color .15s ease, border-color .15s ease, color .15s ease;
 }
 
 .pub-btn:hover,
 .pub-btn:focus {
-    color: var(--link-color);
+    background-color: var(--link-color);
     border-color: var(--link-color);
+    color: #fff;
     text-decoration: none;
 }
 
 .pub-btn.active {
-    background-color: rgba(127, 127, 127, .28);
-    border-color: currentColor;
+    background-color: rgba(127, 127, 127, .3);
+    border-color: rgba(127, 127, 127, .55);
 }
 
 /* --- BibTeX block --- */
@@ -500,7 +504,7 @@ pre code {
     margin: 0;
     font-size: .68rem;
     line-height: 1.45;
-    padding: .8rem 4.5rem .8rem .8rem;
+    padding: .9rem 5rem .9rem .9rem;
     /* Wrap rather than scroll: soft wraps aren't real newlines, so the
        copied BibTeX is still byte-for-byte correct. */
     white-space: pre-wrap;
@@ -512,11 +516,11 @@ pre code {
     top: .5rem;
     right: .5rem;
     font-family: Menlo, Monaco, "Courier New", monospace;
-    font-size: .65rem;
+    font-size: .7rem;
     line-height: 1;
-    padding: 5px 9px;
+    padding: 6px 12px;
     border: 1px solid rgba(255, 255, 255, .35);
-    border-radius: 999px;
+    border-radius: 6px;
     background: transparent;
     color: #ddd;
     cursor: pointer;
