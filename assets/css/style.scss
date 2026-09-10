@@ -1,224 +1,462 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-@import "fonts";
+/* ==========================================================================
+   Hyde-style layout: fixed dark sidebar + scrolling content column.
+   Port of mdo's Hyde (MIT) to this Jekyll site. Self-contained -- the remote
+   theme's stylesheet is deliberately not imported.
+   ========================================================================== */
 
+/* --------------------------------------------------------------------------
+   Palette
+   -------------------------------------------------------------------------- */
 
-/* Base styles */
+:root {
+    --sidebar-bg-color: #202020;
+    --sidebar-img-border-color: #515151;
+    --sidebar-p-color: #909090;
+    --sidebar-h1-color: #fff;
+    --sidebar-a-color: #fff;
+    --sidebar-socials-color: #fff;
+
+    --text-color: #222;
+    --bkg-color: #faf9f6;
+    --heading-color: #303030;
+    --list-color: #5a5a5a;
+    --link-color: #268bd2;
+    --muted-color: #515151;
+
+    --table-border-color: #e5e5e5;
+    --table-stripe-color: #f9f9f9;
+    --code-color: #000;
+    --code-background-color: #e5e5e5;
+    --code-block-color: #fff;
+    --code-block-background-color: #272822;
+
+    --moon-sun-color: #fff;
+    --moon-sun-background-color: #515151;
+}
+
+/* Follow the OS unless the visitor has picked a theme explicitly. */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --text-color: #eee;
+    --bkg-color: #121212;
+    --heading-color: #dbe2e9;
+    --list-color: #9d9d9d;
+    --link-color: #4aa3e0;
+    --muted-color: #9a9a9a;
+    --table-border-color: #515151;
+    --table-stripe-color: #202020;
+    --code-color: #fff;
+    --code-background-color: #515151;
+    }
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --text-color: #eee;
+    --bkg-color: #121212;
+    --heading-color: #dbe2e9;
+    --list-color: #9d9d9d;
+    --link-color: #4aa3e0;
+    --muted-color: #9a9a9a;
+    --table-border-color: #515151;
+    --table-stripe-color: #202020;
+    --code-color: #fff;
+    --code-background-color: #515151;
+}
+
+/* --------------------------------------------------------------------------
+   Base
+   -------------------------------------------------------------------------- */
+
+* { box-sizing: border-box; }
+
+html {
+    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (min-width: 48em) { html { font-size: 16px; } }
+@media (min-width: 58em) { html { font-size: 18px; } }
+
 body {
-    background-color: #fff;
-    padding: 20px;
-    font: 18px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #727272;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    color: var(--text-color);
+    background-color: var(--bkg-color);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus { text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
     font-weight: 400;
+    line-height: 1.25;
+    color: var(--heading-color);
+    text-rendering: optimizeLegibility;
 }
 
-section {
-    width: 100%;
-    max-width: 1040px;
-    float: right;
-    padding-bottom: 30px;
+h1 { font-size: 1.9rem; margin-top: 0; }
+h2 { font-size: 1.45rem; margin-top: 1.75rem; }
+h3 { font-size: 1.2rem; margin-top: 1.5rem; }
+h4, h5, h6 { font-size: 1rem; margin-top: 1.25rem; }
+
+p { margin-top: 0; margin-bottom: 1rem; }
+
+strong { font-weight: 600; color: var(--heading-color); }
+
+ul, ol, dl { margin-top: 0; margin-bottom: 1rem; }
+
+li { color: var(--list-color); }
+
+hr {
+    position: relative;
+    margin: 1.5rem 0;
+    border: 0;
+    border-top: 1px solid var(--table-border-color);
 }
 
-h1 {
-    font-size: 28px;
+blockquote {
+    padding: .5rem 1rem;
+    margin: .8rem 0;
+    color: var(--muted-color);
+    border-left: .25rem solid var(--table-border-color);
 }
 
-.wrapper {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 15px;
-    box-sizing: border-box;
-}
-
-/* Media Queries */
-@media screen and (max-width: 1400px) {
-    .wrapper {
-        width: 95%;
-    }
-}
-
-@media screen and (max-width: 1040px) {
-    section {
-        padding-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        padding: 15px;
-        font-size: 16px;
-    }
-    
-    h1 {
-        font-size: 24px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    body {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-}
-
-/* ==================================================================
-   Theme: light / dark
-   ================================================================== */
-
-body {
-    transition: background-color 0.35s ease, color 0.35s ease;
-}
-
-/* --- |1> dark --- */
-html[data-theme="dark"] body {
-    background-color: #101216;
-    color: #b6bdc4;
-}
-
-html[data-theme="dark"] h1,
-html[data-theme="dark"] h2,
-html[data-theme="dark"] h3,
-html[data-theme="dark"] h4,
-html[data-theme="dark"] h5,
-html[data-theme="dark"] h6,
-html[data-theme="dark"] strong {
-    color: #e6e9ec;
-}
-
-html[data-theme="dark"] a {
-    color: #7ab5f5;
-}
-
-html[data-theme="dark"] a:hover,
-html[data-theme="dark"] a:focus {
-    color: #a8cef8;
-}
-
-html[data-theme="dark"] code,
-html[data-theme="dark"] pre {
-    background-color: #191d22;
-    border-color: #2a2f36;
-    color: #ccd3da;
-}
-
-html[data-theme="dark"] blockquote {
-    color: #9aa2ab;
-    border-left-color: #2a2f36;
-}
-
-html[data-theme="dark"] table th,
-html[data-theme="dark"] table td,
-html[data-theme="dark"] hr {
-    border-color: #2a2f36;
-}
-
-/* Dark glyph icons (location, mail, CV...) need a light chip to stay visible */
-html[data-theme="dark"] header .view img {
-    background-color: #e6e9ec;
-    border-radius: 4px;
-    padding: 2px;
-    box-sizing: border-box;
-}
-
-/* Navbar sits on its own dark background in every theme */
-html[data-theme] .navbar a,
-html[data-theme] .navbar a:hover,
-html[data-theme] .navbar a:focus {
-    color: #fff;
-}
-
-/* --- theme control --- */
-.q-theme {
-    margin: 14px 0;
-}
-
-.q-theme-label {
+img {
     display: block;
-    margin-bottom: 6px;
-    font-size: 12px;
-    letter-spacing: 0.05em;
-    opacity: 0.65;
+    max-width: 100%;
+    margin: 0 0 1rem;
+    border-radius: 5px;
 }
+
+table {
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid var(--table-border-color);
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: .25rem .5rem;
+    border: 1px solid var(--table-border-color);
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th { background-color: var(--table-stripe-color); }
+
+code, pre { font-family: Menlo, Monaco, "Courier New", monospace; }
+
+code {
+    padding: .15em .35em;
+    font-size: 85%;
+    border-radius: 3px;
+    color: var(--code-color);
+    background-color: var(--code-background-color);
+}
+
+pre {
+    display: block;
+    margin: 0 0 1rem;
+    padding: 1rem;
+    font-size: .8rem;
+    line-height: 1.4;
+    overflow-x: auto;
+    border-radius: 4px;
+    color: var(--code-block-color);
+    background-color: var(--code-block-background-color);
+}
+
+pre code {
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+    background-color: transparent;
+}
+
+/* --------------------------------------------------------------------------
+   Wrapper: sidebar + content
+   -------------------------------------------------------------------------- */
+
+.wrapper { display: flex; flex-direction: column; }
+
+.sidebar {
+    flex-shrink: 0;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, .5);
+    background-color: var(--sidebar-bg-color);
+}
+
+.sidebar a { color: var(--sidebar-a-color); }
+
+.content {
+    flex-grow: 1;
+    padding: 2rem 1rem;
+    max-width: 38rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (min-width: 48em) {
+    html, body { height: 100%; }
+    body { overflow: hidden; }
+
+    .wrapper {
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .sidebar {
+        width: 18rem;
+        text-align: left;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #464646 transparent;
+    }
+
+
+    .content {
+        overflow-y: auto;
+        margin: 0;
+        padding: 2rem 2rem 4rem 2rem;
+        max-width: 40rem;
+    }
+}
+
+@media (min-width: 64em) {
+    .content { max-width: 46rem; padding-left: 3rem; }
+}
+
+/* --------------------------------------------------------------------------
+   Sidebar: identity block
+   -------------------------------------------------------------------------- */
+
+.sidebar-sticky { width: 100%; }
+
+@media (min-width: 48em) {
+    .sidebar-sticky { width: 16rem; }
+}
+
+.sidebar-about { text-align: center; color: var(--sidebar-p-color); }
+
+.sidebar-about img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto .9rem;
+    border: 2px solid var(--sidebar-img-border-color);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sidebar-about h1 {
+    margin: 0 0 .35rem;
+    font-family: "Abril Fatface", Georgia, serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.25;
+    color: var(--sidebar-h1-color);
+}
+
+/* Preserve the existing emphasis: only "Manos" is bold. */
+.sidebar-about h1 a,
+.site-name { font-weight: 400; color: var(--sidebar-h1-color); }
+
+.sidebar-about h1 a:hover { text-decoration: none; opacity: .85; }
+.site-name strong { font-weight: 400; color: inherit; }
+
+.lead {
+    margin: 0;
+    font-size: .95rem;
+    font-weight: 300;
+    line-height: 1.4;
+    color: var(--sidebar-p-color);
+}
+
+.sidebar-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .35rem;
+    margin: .6rem 0 0;
+    font-size: .85rem;
+    color: var(--sidebar-p-color);
+}
+
+.sidebar-meta svg { flex: none; }
+
+/* --------------------------------------------------------------------------
+   Sidebar: navigation
+   -------------------------------------------------------------------------- */
+
+.sidebar-nav {
+    margin: 1.75rem 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.sidebar-nav-item { display: block; }
+
+.sidebar-nav-item a {
+    display: block;
+    padding: .2rem 0;
+    color: var(--sidebar-a-color);
+}
+
+.sidebar-nav-item a:hover,
+.sidebar-nav-item a:focus { text-decoration: underline; }
+
+.sidebar-nav-item.active a { font-weight: 600; }
+
+/* --------------------------------------------------------------------------
+   Sidebar: social icons
+   -------------------------------------------------------------------------- */
+
+.sidebar-socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .25rem;
+}
+
+.social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    color: var(--sidebar-socials-color);
+    opacity: .8;
+    transition: opacity .2s ease, background-color .2s ease;
+}
+
+.social:hover,
+.social:focus {
+    opacity: 1;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, .12);
+}
+
+.social svg { display: block; }
+
+@media (min-width: 48em) {
+    .sidebar-socials { justify-content: flex-start; }
+}
+
+/* --------------------------------------------------------------------------
+   Light / dark toggle
+   -------------------------------------------------------------------------- */
+
+.light-dark {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: .5rem;
+}
+
+.btn-light-dark {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--moon-sun-background-color);
+    color: var(--moon-sun-color);
+}
+
+.btn-light-dark svg {
+    display: block;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+}
+
+/* Show the icon for the theme you'd switch *to*. */
+.btn-light-dark .sun { display: none; }
+
+:root[data-theme="dark"] .btn-light-dark .moon { display: none; }
+:root[data-theme="dark"] .btn-light-dark .sun { display: block; }
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .btn-light-dark .moon { display: none; }
+    :root:not([data-theme="light"]) .btn-light-dark .sun { display: block; }
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+
+.content footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--table-border-color);
+    font-size: .8rem;
+    color: var(--muted-color);
+}
+
+.content footer p { margin: 0; }
+
+/* --------------------------------------------------------------------------
+   Publications (carried over)
+   -------------------------------------------------------------------------- */
+
+.pub-filters { margin: 10px 0 20px; }
 
 .q-btn {
-    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-    font-size: 13px;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+    font-size: .72rem;
     line-height: 1;
-    padding: 5px 9px;
+    padding: 6px 10px;
     margin: 0 4px 4px 0;
-    border: 1px solid rgba(127, 127, 127, 0.55);
+    border: 1px solid rgba(127, 127, 127, .55);
     border-radius: 999px;
     background: transparent;
     color: inherit;
     cursor: pointer;
-    transition: background-color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+    transition: background-color .2s ease, border-color .2s ease;
 }
 
-.q-btn:hover {
-    border-color: currentColor;
-}
+.q-btn:hover { border-color: currentColor; }
 
-.q-btn.active {
-    background-color: rgba(127, 127, 127, 0.28);
-    border-color: currentColor;
-    font-weight: 700;
-}
-
-/* ==================================================================
-   Publications
-   ================================================================== */
-
-.pub-filters {
-    margin: 10px 0 20px;
-}
-
+.q-btn.active,
 .pub-filter.active {
-    background-color: rgba(127, 127, 127, 0.28);
+    background-color: rgba(127, 127, 127, .28);
     border-color: currentColor;
-    font-weight: 700;
-}
-
-.pub-section h3 {
-    margin-bottom: 12px;
-}
-
-.pub {
-    margin-bottom: 22px;
-}
-
-.pub p {
-    margin: 2px 0;
-}
-
-.pub-title {
-    font-size: 1.05em;
     font-weight: 600;
 }
 
-.pub-title a {
-    text-decoration: none;
-}
+.pub-section h3 { margin-bottom: 12px; }
 
-.pub-authors {
-    font-size: 0.92em;
-}
+.pub { margin-bottom: 22px; }
 
-.pub-venue {
-    font-size: 0.92em;
-    font-style: italic;
-    opacity: 0.85;
-}
+.pub p { margin: 2px 0; }
+
+.pub-title { font-size: 1.02em; font-weight: 600; color: var(--heading-color); }
+
+.pub-title a { text-decoration: none; }
+
+.pub-authors { font-size: .92em; }
+
+.pub-venue { font-size: .92em; font-style: italic; opacity: .85; }
 
 .pub-award {
     display: inline-block;
-    font-size: 12px;
+    font-size: .7rem;
     font-weight: 600;
     padding: 2px 9px;
     margin-left: 4px;
@@ -228,25 +466,10 @@ html[data-theme] .navbar a:focus {
     vertical-align: middle;
 }
 
-html[data-theme="dark"] .pub-award {
-    color: #e3b341;
+:root[data-theme="dark"] .pub-award { color: #e3b341; }
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .pub-award { color: #e3b341; }
 }
 
-.pub-footnote {
-    font-size: 0.85em;
-    font-style: italic;
-    opacity: 0.75;
-}
-
-/* ==================================================================
-   Site name: only "Manos" is bold
-   ================================================================== */
-
-.site-name {
-    text-decoration: none;
-    font-weight: 400;
-}
-
-.site-name strong {
-    font-weight: 700;
-}
+.pub-footnote { font-size: .85em; font-style: italic; opacity: .75; }
