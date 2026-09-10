@@ -9,7 +9,7 @@ Before joining TUM, I graduated from the [Computer Science Department](https://w
 Please call me Manos. Emmanouil is the formal birth name that is never used in Greece.
 
 ## Research Interests
-*Quantum Software Systems, Quantum Compilers, Operating Systems, HW-SW Co-design, Quantum Error Correction, FTQC, HPC, Distributed Systems*
+*Quantum Software Systems, Quantum Hardware-Software Co-Design, Quantum Error Correction, FTQC, Distributed Systems*
 
 
 ### Hobbies & Interests

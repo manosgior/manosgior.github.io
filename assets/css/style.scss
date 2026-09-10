@@ -454,6 +454,78 @@ pre code {
 
 .pub-venue { font-size: .92em; font-style: italic; opacity: .85; }
 
+/* --- per-paper link buttons --- */
+
+.pub-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3rem;
+    margin: .5rem 0 0;
+}
+
+.pub-btn {
+    font-family: Menlo, Monaco, "Courier New", monospace;
+    font-size: .68rem;
+    line-height: 1;
+    padding: 5px 9px;
+    border: 1px solid rgba(127, 127, 127, .5);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--muted-color);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+
+.pub-btn:hover,
+.pub-btn:focus {
+    color: var(--link-color);
+    border-color: var(--link-color);
+    text-decoration: none;
+}
+
+.pub-btn.active {
+    background-color: rgba(127, 127, 127, .28);
+    border-color: currentColor;
+}
+
+/* --- BibTeX block --- */
+
+.pub-cite {
+    position: relative;
+    margin-top: .5rem;
+}
+
+.pub-cite pre {
+    margin: 0;
+    font-size: .68rem;
+    line-height: 1.45;
+    padding: .8rem 4.5rem .8rem .8rem;
+    /* Wrap rather than scroll: soft wraps aren't real newlines, so the
+       copied BibTeX is still byte-for-byte correct. */
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.pub-copy {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+    font-size: .65rem;
+    line-height: 1;
+    padding: 5px 9px;
+    border: 1px solid rgba(255, 255, 255, .35);
+    border-radius: 999px;
+    background: transparent;
+    color: #ddd;
+    cursor: pointer;
+    transition: background-color .2s ease, border-color .2s ease;
+}
+
+.pub-copy:hover,
+.pub-copy:focus { border-color: #fff; background-color: rgba(255, 255, 255, .12); }
+
 .pub-award {
     display: inline-block;
     font-size: .7rem;
