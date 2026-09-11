@@ -446,13 +446,21 @@ pre code {
 
 .pub p { margin: 2px 0; }
 
-.pub-title { font-size: 1.02em; font-weight: 600; color: var(--heading-color); }
+.pub-title { font-size: 1em; font-weight: 400; }
 
 .pub-title a { text-decoration: none; }
 
 .pub-authors { font-size: .92em; }
 
-.pub-venue { font-size: .92em; font-style: italic; opacity: .85; }
+.pub-venue { font-size: .92em; font-weight: 700; color: var(--heading-color); }
+
+/* Pre-prints have no venue to headline, so they keep the quieter styling. */
+.pub-section-preprints .pub-venue {
+    font-weight: 400;
+    font-style: italic;
+    color: inherit;
+    opacity: .85;
+}
 
 /* --- per-paper link buttons --- */
 
