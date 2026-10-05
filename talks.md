@@ -49,6 +49,8 @@ Undergraduate teaching assistant based on overall grades
 
 ## Service
 
+[qStack: International Workshop on Quantum Systems](https://qstack-workshop.github.io/), co-located with [SOSP'26](https://sigops.org/s/conferences/sosp/2026/), Workshop Chair\
+[European Conference on Computer Systems (EuroSys) '27](https://2027.eurosys.org/) Program Committee Member\
 [ACM/IEEE International Symposium on Code Generation and Optimization (CGO) '27](https://conf.researchr.org/home/cgo-2027) Program Committee Member\
 [Quantum Journal](https://quantum-journal.org/) Reviewer\
 [ACM Transactions on Architecture and Code Optimization](https://dl.acm.org/journal/taco) Journal Reviewer\
