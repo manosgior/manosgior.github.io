@@ -575,3 +575,9 @@ pre code {
     gap: .5rem;
     margin: 0 0 1.5rem;
 }
+
+/* Faint break between the quantum and distributed-systems papers. */
+.pub-divider {
+    margin: 0 0 22px;
+    border-top: 1px dashed rgba(127, 127, 127, .35);
+}
